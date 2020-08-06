@@ -1,9 +1,13 @@
 import React from "react";
+import "../styles/MyFooter.css";
+import SocialMediaLinks from "../components/SocialMediaLinks";
 
 function MyFooter() {
   return (
-    <div>
-      <h1>MyFooter!</h1>
+    <div className="footer-container">
+      <h3 className="name">Ethan Keshishian</h3>
+      <div className="links-container"></div>
+      <SocialMediaLinks />
     </div>
   );
 }

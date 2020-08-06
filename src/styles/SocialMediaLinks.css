@@ -1,0 +1,6 @@
+.links-container {
+  display: flex;
+}
+.link {
+  padding: 0px 10px;
+}
