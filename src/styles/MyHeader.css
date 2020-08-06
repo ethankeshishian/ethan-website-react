@@ -1,3 +1,8 @@
+.heading-container {
+  text-align: center;
+  border-bottom: 2px solid grey;
+  background-color: white;
+}
 .main-heading {
   text-decoration: none;
   color: black;
@@ -6,10 +11,6 @@
   -ms-user-select: text; /* IE 10+ */
   user-select: text; /* Likely future */
   line-height: 10px;
-}
-.heading-container {
-  text-align: center;
-  border-bottom: 2px solid grey;
 }
 .subtext {
 }
