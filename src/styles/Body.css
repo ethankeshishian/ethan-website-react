@@ -6,8 +6,9 @@
 }
 
 .image-container {
-  min-width: 650px;
+  min-width: 350px;
   height: 350px;
+  padding-right: 48px;
 }
 
 .image {
@@ -20,6 +21,7 @@
   text-align: left;
   width: 500px;
   max-height: 500px;
+  padding-left: 48px;
 }
 
 .bio {
@@ -42,6 +44,7 @@
   }
   .image-container {
     min-width: 320px;
+    padding-right: unset;
   }
 
   .text-container {

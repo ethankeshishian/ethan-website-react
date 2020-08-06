@@ -10,7 +10,7 @@ function Body() {
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       />
-      <div>
+      <div className="main-container">
         <div className="content-container">
           <div className="image-container">
             <img className="image" src={Ethan} alt="Ethan Keshishian" />
