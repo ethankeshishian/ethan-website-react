@@ -7,5 +7,9 @@
   user-select: text; /* Likely future */
   line-height: 10px;
 }
+.heading-container {
+  text-align: center;
+  border-bottom: 2px solid grey;
+}
 .subtext {
 }

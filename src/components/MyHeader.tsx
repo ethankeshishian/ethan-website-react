@@ -3,7 +3,7 @@ import "../styles/MyHeader.css";
 
 function MyHeader() {
   return (
-    <div>
+    <div className="heading-container">
       <a href="#" className="main-heading">
         <h1>Ethan Keshishian</h1>
       </a>
