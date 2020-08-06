@@ -20,6 +20,7 @@
 .linkedin {
   background: #007bb5;
   color: white;
+  display: flex;
 }
 
 /* GitHub */
@@ -27,6 +28,7 @@
 .github {
   background: #24292d;
   color: white;
+  display: flex;
 }
 
 /* Instagram */
@@ -34,6 +36,7 @@
 .instagram {
   background: #f00075;
   color: white;
+  display: flex;
 }
 
 /* Twitter */
@@ -41,6 +44,7 @@
 .twitter {
   background: #55acee;
   color: white;
+  display: flex;
 }
 
 /* Spotify */
@@ -48,10 +52,16 @@
 .spotify {
   background: #1bd760;
   color: white;
+  display: flex;
 }
 
 /* Email */
-.fa-envelope,
+.fa-envelope {
+  background: #555;
+  color: white;
+  display: flex;
+}
+
 .envelope {
   background: #555;
   color: white;
@@ -59,6 +69,7 @@
 
 .social-container {
   padding: 10px;
+  text-align: center;
   border-radius: 50%;
   margin-right: 8px;
 }
