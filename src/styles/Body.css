@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   vertical-align: middle;
-  padding: 100px 0px;
+  margin-top: 20vh;
 }
 
 .image-container {
@@ -46,6 +46,7 @@
 @media screen and (max-width: 700px) {
   .body-container {
     padding: 16px;
+    margin-top: unset;
   }
   .image-container {
     min-width: 320px;
