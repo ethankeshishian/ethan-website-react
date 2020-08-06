@@ -1,0 +1,25 @@
+.content-container {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.image-container {
+  width: 500px;
+  height: 500px;
+}
+
+.image {
+  border-radius: 50%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text-container {
+  align-self: center;
+  text-align: left;
+}
+
+.bio {
+  width: 500px;
+}
