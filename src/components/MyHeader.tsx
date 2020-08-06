@@ -1,10 +1,13 @@
 import React from "react";
+import "../styles/MyHeader.css";
 
 function MyHeader() {
   return (
     <div>
-      <a href="#">Ethan Keshishian</a>
-      <p>Software Engineer | UCLA Computer Science</p>
+      <a href="#" className="main-heading">
+        <h1>Ethan Keshishian</h1>
+      </a>
+      <p className="subtext">Software Engineer | UCLA Computer Science</p>
     </div>
   );
 }
