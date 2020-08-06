@@ -11,7 +11,7 @@ import {
 
 function SocialMediaLinks() {
   return (
-    <div className="links-container">
+    <div className="social-links-container">
       <a href={LINKEDIN_LINK} className="link-container">
         <h4 className="link">LinkedIn</h4>
       </a>
