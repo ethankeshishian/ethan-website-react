@@ -22,8 +22,13 @@
   width: 500px;
   max-height: 500px;
   padding-left: 48px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
-
+.title {
+  font-size: 32px;
+  line-height: 10px;
+}
 .bio {
   text-align: justify;
   font-size: 24px;
