@@ -1,6 +1,11 @@
 .links-container {
   display: flex;
+  flex-wrap: wrap;
 }
 .link {
   padding: 0px 10px;
+  color: grey;
+}
+.link-container {
+  text-decoration: none;
 }

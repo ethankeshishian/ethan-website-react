@@ -10,11 +10,19 @@ import {
   faSpotify,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  LINKEDIN_LINK,
+  GITHUB_LINK,
+  INSTAGRAM_LINK,
+  TWITTER_LINK,
+  SPOTIFY_LINK,
+  EMAIL_LINK,
+} from "../constants";
 
 function SocialMediaIcons() {
   return (
     <div className="icon-container">
-      <a href="https://linkedin.com/in/ethankeshishian">
+      <a href={LINKEDIN_LINK}>
         <div className="social-container linkedin">
           <FontAwesomeIcon
             icon={faLinkedin}
@@ -22,12 +30,12 @@ function SocialMediaIcons() {
           />
         </div>
       </a>
-      <a href="https://github.com/ethankeshishian">
+      <a href={GITHUB_LINK}>
         <div className="social-container github">
           <FontAwesomeIcon icon={faGithub} className="fa-github social-icons" />
         </div>{" "}
       </a>
-      <a href="https://twitter.com/ethankeshishian">
+      <a href={INSTAGRAM_LINK}>
         <div className="social-container twitter">
           <FontAwesomeIcon
             icon={faTwitter}
@@ -35,7 +43,7 @@ function SocialMediaIcons() {
           />
         </div>
       </a>
-      <a href="https://instagram.com/ethankeshishian">
+      <a href={TWITTER_LINK}>
         <div className="social-container instagram">
           <FontAwesomeIcon
             icon={faInstagram}
@@ -43,7 +51,7 @@ function SocialMediaIcons() {
           />
         </div>
       </a>
-      <a href="https://open.spotify.com/user/baklou">
+      <a href={SPOTIFY_LINK}>
         <div className="social-container spotify">
           <FontAwesomeIcon
             icon={faSpotify}
@@ -51,7 +59,7 @@ function SocialMediaIcons() {
           />
         </div>
       </a>
-      <a href="mailto:keshishianethan+site@gmail.com">
+      <a href={EMAIL_LINK}>
         <div className="social-container envelope">
           <FontAwesomeIcon
             icon={faEnvelope}

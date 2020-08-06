@@ -1,4 +1,7 @@
 .footer-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+.name {
+  color: grey;
 }
