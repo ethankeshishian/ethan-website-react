@@ -6,7 +6,7 @@
 }
 
 .image-container {
-  width: 650px;
+  min-width: 650px;
   height: 350px;
 }
 
@@ -18,10 +18,54 @@
 
 .text-container {
   text-align: left;
+  width: 500px;
+  max-height: 500px;
 }
 
 .bio {
-  width: 500px;
   text-align: justify;
   font-size: 24px;
+}
+
+@media screen and (max-width: 1200px) {
+  .content-container {
+    flex-wrap: wrap;
+  }
+  .image-container {
+    min-height: 320px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .content-container {
+    padding: 16px;
+  }
+  .image-container {
+    min-width: 320px;
+  }
+
+  .text-container {
+    text-align: left;
+    min-width: 320px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .image-container {
+    min-width: 0px;
+    min-height: 0px;
+    height: unset;
+  }
+  .text-container {
+    min-width: 0px;
+    padding: 0px;
+  }
+  .content-container {
+    padding: 4%;
+  }
+  .bio {
+    text-align: justify;
+    font-size: 20px;
+  }
 }

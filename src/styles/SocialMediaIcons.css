@@ -1,5 +1,6 @@
 .icon-container {
   display: flex;
+  flex-wrap: wrap;
   padding: 8px 0px;
 }
 /* LinkedIn */
@@ -61,6 +62,7 @@
   text-align: center;
   border-radius: 50%;
   margin-right: 8px;
+  margin-bottom: 8px;
   transition: all 0.1s ease-in-out;
 }
 .social-container:hover {

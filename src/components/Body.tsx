@@ -22,7 +22,7 @@ function Body() {
               my LinkedIn for more on what I do, or check out my GitHub for
               information on some of my projects.
             </p>
-            <div>
+            <div className="social-icons">
               <SocialMediaIcons />
             </div>
           </div>
