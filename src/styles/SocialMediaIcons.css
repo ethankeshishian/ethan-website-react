@@ -1,0 +1,70 @@
+/* .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+} */
+.icon-container {
+  display: flex;
+}
+/* LinkedIn */
+.fa-linkedin,
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+/* GitHub */
+.fa-github,
+.github {
+  background: #24292d;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram,
+.instagram {
+  background: #f00075;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter,
+.twitter {
+  background: #55acee;
+  color: white;
+}
+
+/* Spotify */
+.fa-spotify,
+.spotify {
+  background: #1bd760;
+  color: white;
+}
+
+/* Email */
+.fa-envelope,
+.envelope {
+  background: #555;
+  color: white;
+}
+
+.social-container {
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.social-container:hover {
+  opacity: 0.7;
+}
+.social-container:hover .fa {
+  opacity: 0.7;
+}
