@@ -7,3 +7,11 @@
 .name {
   color: grey;
 }
+.links-container,
+.name {
+  padding: 10px;
+}
+
+.links-container {
+  margin-bottom: 20px;
+}

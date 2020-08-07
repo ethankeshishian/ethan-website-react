@@ -19,7 +19,7 @@
 
 .text-container {
   text-align: left;
-  width: 500px;
+  max-width: 500px;
   max-height: 500px;
   padding-left: 48px;
   padding-top: 32px;

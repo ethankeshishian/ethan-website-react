@@ -6,8 +6,9 @@ function MyFooter() {
   return (
     <div className="footer-container">
       <h3 className="name">Ethan Keshishian</h3>
-      <div className="links-container"></div>
-      <SocialMediaLinks />
+      <div className="links-container">
+        <SocialMediaLinks />
+      </div>
     </div>
   );
 }
