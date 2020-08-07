@@ -2,9 +2,6 @@
   display: flex;
   justify-content: space-evenly;
   border-top: 2px solid grey;
-  position: absolute;
-  bottom: 0%;
-  width: 100%;
   background-color: white;
 }
 .name {

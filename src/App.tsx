@@ -7,9 +7,15 @@ import MyFooter from "./components/MyFooter";
 function App() {
   return (
     <div className="App">
-      <MyHeader></MyHeader>
-      <Body></Body>
-      <MyFooter></MyFooter>
+      <div className="header">
+        <MyHeader />
+      </div>
+      <div className="body">
+        <Body />
+      </div>
+      <div className="footer">
+        <MyFooter />
+      </div>
     </div>
   );
 }

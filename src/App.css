@@ -1,4 +1,29 @@
 .App {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "body"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  height: 100vh;
 }
+.header {
+  grid-area: header;
+}
+.body {
+  grid-area: body;
+  /* height: 100; */
+  /* flex: 1; */
+  /* height: 100vh; */
+}
+.footer {
+  grid-area: footer;
+  /* width: 100%; */
+}
+
+/* @media screen and (max-width: 500px) {
+  .body {
+    height: unset;
+  }
+} */
