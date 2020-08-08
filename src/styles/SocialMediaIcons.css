@@ -1,3 +1,4 @@
+/* TESTING RESIZE */
 .icon-container {
   display: flex;
   flex-wrap: wrap;
@@ -8,7 +9,6 @@
 .linkedin {
   background: #007bb5;
   color: white;
-  display: flex;
   font-size: 25px;
 }
 
@@ -17,7 +17,6 @@
 .github {
   background: #24292d;
   color: white;
-  display: flex;
   font-size: 25px;
 }
 
@@ -26,16 +25,13 @@
 .instagram {
   background: #f00075;
   color: white;
-  display: flex;
   font-size: 25px;
 }
-
 /* Twitter */
 .fa-twitter,
 .twitter {
   background: #55acee;
   color: white;
-  display: flex;
   font-size: 25px;
 }
 
@@ -44,7 +40,6 @@
 .spotify {
   background: #1bd760;
   color: white;
-  display: flex;
   font-size: 25px;
 }
 
@@ -53,11 +48,15 @@
 .envelope {
   background: #555;
   color: white;
-  display: flex;
   font-size: 25px;
 }
 
 .social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
   padding: 10px;
   text-align: center;
   border-radius: 50%;
