@@ -1,8 +1,10 @@
-/* TESTING RESIZE */
 .icon-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  /* container width + padding * 2 = 45 */
+  grid-template-columns: repeat(auto-fit, 45px);
   padding: 8px 0px;
+  column-gap: 8px;
+  row-gap: 8px;
 }
 /* LinkedIn */
 .fa-linkedin,
@@ -60,8 +62,6 @@
   padding: 10px;
   text-align: center;
   border-radius: 50%;
-  margin-right: 8px;
-  margin-bottom: 8px;
   transition: all 0.1s ease-in-out;
 }
 .social-container:hover {
