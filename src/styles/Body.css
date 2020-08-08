@@ -9,8 +9,8 @@
 .image-container {
   grid-template-areas: img;
   justify-self: center;
-  max-width: 350px;
-  max-height: 350px;
+  width: 350px;
+  height: 350px;
 }
 
 .image {
@@ -37,13 +37,18 @@
   font-size: 24px;
 }
 /* Handling narrow screens */
+/* padding*2 + img width + gap + txt width = 942 */
 @media screen and (max-width: 942px) {
-  /* padding*2 + img width + gap + txt width = 942 */
   .body-container {
     grid-template-areas: "img" "txt";
   }
 }
-@media screen and (max-width: 400px) {
+/* padding*2 + img width = 382 */
+@media screen and (max-width: 382px) {
+  .image-container {
+    height: unset;
+    width: unset;
+  }
   .bio {
     font-size: 20px;
   }
