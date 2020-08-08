@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   vertical-align: middle;
-  margin-top: 20vh;
+  padding: 16px;
 }
 
 .image-container {
@@ -18,12 +18,13 @@
 }
 
 .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: left;
   max-width: 500px;
   max-height: 500px;
   padding-left: 48px;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .title {
   font-size: 32px;
@@ -38,16 +39,12 @@
   .body-container {
     flex-wrap: wrap;
   }
-  .image-container {
+  /* .image-container {
     min-height: 320px;
-  }
+  } */
 }
 
 @media screen and (max-width: 700px) {
-  .body-container {
-    padding: 16px;
-    margin-top: unset;
-  }
   .image-container {
     min-width: 320px;
     padding-right: unset;
