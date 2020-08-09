@@ -9,7 +9,7 @@
 /* LinkedIn */
 .fa-linkedin,
 .linkedin {
-  background: #007bb5;
+  background: var(--linkedin-color);
   color: white;
   font-size: 25px;
 }
@@ -17,22 +17,22 @@
 /* GitHub */
 .fa-github,
 .github {
-  background: #24292d;
+  background: var(--github-color);
   color: white;
   font-size: 25px;
 }
 
-/* Instagram */
-.fa-instagram,
-.instagram {
-  background: #f00075;
-  color: white;
-  font-size: 25px;
-}
 /* Twitter */
 .fa-twitter,
 .twitter {
-  background: #55acee;
+  background: var(--twitter-color);
+  color: white;
+  font-size: 25px;
+}
+/* Instagram */
+.fa-instagram,
+.instagram {
+  background: var(--instagram-color);
   color: white;
   font-size: 25px;
 }
@@ -40,7 +40,7 @@
 /* Spotify */
 .fa-spotify,
 .spotify {
-  background: #1bd760;
+  background: var(--spotify-color);
   color: white;
   font-size: 25px;
 }
@@ -48,7 +48,7 @@
 /* Email */
 .fa-envelope,
 .envelope {
-  background: #555;
+  background: var(--email-color);
   color: white;
   font-size: 25px;
 }

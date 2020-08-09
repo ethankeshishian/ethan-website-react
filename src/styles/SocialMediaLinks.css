@@ -5,7 +5,7 @@
 .link {
   padding-left: 20px;
   margin-bottom: 0px;
-  color: grey;
+  color: var(--small-heading-color);
 }
 .link-container {
   text-decoration: none;

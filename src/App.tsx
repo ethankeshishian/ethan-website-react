@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "./constants.css";
 import Body from "./components/Body";
 import MyHeader from "./components/MyHeader";
 import MyFooter from "./components/MyFooter";

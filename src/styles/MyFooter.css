@@ -1,11 +1,11 @@
 .footer-container {
   display: flex;
   justify-content: space-evenly;
-  border-top: 2px solid grey;
-  background-color: white;
+  border-top: var(--border-style);
+  background-color: var(--background-light);
 }
 .name {
-  color: grey;
+  color: var(--small-heading-color);
 }
 .links-container,
 .name {

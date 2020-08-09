@@ -1,5 +1,3 @@
-export const MAIN_HEADER_COLOR = "black";
-export const OTHER_HEADER_COLOR = "grey";
 export const LINKEDIN_LINK = "https://linkedin.com/in/ethankeshishian";
 export const GITHUB_LINK = "https://github.com/ethankeshishian";
 export const INSTAGRAM_LINK = "https://twitter.com/ethankeshishian";
