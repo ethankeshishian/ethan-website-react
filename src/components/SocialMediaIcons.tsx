@@ -17,12 +17,30 @@ import {
   TWITTER_LINK,
   SPOTIFY_LINK,
   EMAIL_LINK,
+  buttonType,
+  linkType,
+  linkEvent,
 } from "../constants";
 
 function SocialMediaIcons() {
+  function handleClick(site: string) {
+    linkEvent(site, buttonType.Round);
+  }
+  const middleMouseHandler = (
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    site: string
+  ) => {
+    if (event.button === 1) {
+      handleClick(site);
+    }
+  };
   return (
     <div className="icon-container">
-      <a href={LINKEDIN_LINK}>
+      <a
+        href={LINKEDIN_LINK}
+        onClick={() => handleClick(linkType.Linkedin)}
+        onMouseDown={(event) => middleMouseHandler(event, linkType.Linkedin)}
+      >
         <div className="social-container linkedin">
           <FontAwesomeIcon
             icon={faLinkedin}
@@ -30,12 +48,20 @@ function SocialMediaIcons() {
           />
         </div>
       </a>
-      <a href={GITHUB_LINK}>
+      <a
+        href={GITHUB_LINK}
+        onClick={() => handleClick(linkType.Github)}
+        onMouseDown={(event) => middleMouseHandler(event, linkType.Github)}
+      >
         <div className="social-container github">
           <FontAwesomeIcon icon={faGithub} className="fa-github social-icons" />
-        </div>{" "}
+        </div>
       </a>
-      <a href={INSTAGRAM_LINK}>
+      <a
+        href={TWITTER_LINK}
+        onClick={() => handleClick(linkType.Twitter)}
+        onMouseDown={(event) => middleMouseHandler(event, linkType.Twitter)}
+      >
         <div className="social-container twitter">
           <FontAwesomeIcon
             icon={faTwitter}
@@ -43,7 +69,11 @@ function SocialMediaIcons() {
           />
         </div>
       </a>
-      <a href={TWITTER_LINK}>
+      <a
+        href={INSTAGRAM_LINK}
+        onClick={() => handleClick(linkType.Instagram)}
+        onMouseDown={(event) => middleMouseHandler(event, linkType.Instagram)}
+      >
         <div className="social-container instagram">
           <FontAwesomeIcon
             icon={faInstagram}
@@ -51,7 +81,11 @@ function SocialMediaIcons() {
           />
         </div>
       </a>
-      <a href={SPOTIFY_LINK}>
+      <a
+        href={SPOTIFY_LINK}
+        onClick={() => handleClick(linkType.Spotify)}
+        onMouseDown={(event) => middleMouseHandler(event, linkType.Spotify)}
+      >
         <div className="social-container spotify">
           <FontAwesomeIcon
             icon={faSpotify}
@@ -59,7 +93,11 @@ function SocialMediaIcons() {
           />
         </div>
       </a>
-      <a href={EMAIL_LINK}>
+      <a
+        href={EMAIL_LINK}
+        onClick={() => handleClick(linkType.Email)}
+        onMouseDown={(event) => middleMouseHandler(event, linkType.Email)}
+      >
         <div className="social-container envelope">
           <FontAwesomeIcon
             icon={faEnvelope}
