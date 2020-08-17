@@ -2,6 +2,7 @@ import React from "react";
 import Ethan from "../assets/Ethan.jpg";
 import SocialMediaIcons from "../components/SocialMediaIcons";
 import "../styles/Body.css";
+import Articles from "./Articles";
 
 function Body() {
   return (
@@ -27,6 +28,9 @@ function Body() {
                 <SocialMediaIcons />
               </div>
             </div>
+          </div>
+          <div className="articles-container">
+            <Articles />
           </div>
         </div>
       </div>

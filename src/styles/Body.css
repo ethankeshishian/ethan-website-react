@@ -1,13 +1,13 @@
 .body-container {
   display: grid;
   padding: 16px;
-  grid-template-areas: "img txt";
+  grid-template-areas: "img txt" "articles articles";
   column-gap: 60px;
-  row-gap: 20px;
+  row-gap: 16px;
 }
 
 .image-container {
-  grid-template-areas: img;
+  grid-area: img;
   justify-self: center;
   width: 350px;
   height: 350px;
@@ -24,7 +24,7 @@
 }
 
 .text-container {
-  grid-template-areas: txt;
+  grid-area: txt;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,11 +40,16 @@
   text-align: justify;
   font-size: 24px;
 }
+.articles-container {
+  grid-area: articles;
+  justify-self: center;
+}
+
 /* Handling narrow screens */
 /* padding*2 + img width + gap + txt width = 942 */
 @media screen and (max-width: 942px) {
   .body-container {
-    grid-template-areas: "img" "txt";
+    grid-template-areas: "img" "txt" "articles";
   }
 }
 /* padding*2 + img width = 382 */
