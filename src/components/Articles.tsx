@@ -1,12 +1,13 @@
 import React from "react";
+import Article from "./Article";
 import "../styles/Articles.css";
 
 function Articles() {
   return (
-    <div className="info-text">
-      <p>
-        <i>More content coming soon!</i>
-      </p>
+    <div className="articles-container">
+      <Article url="https://jsonplaceholder.typicode.com/posts/1" />
+      {/* <Article url="https://jsonplaceholder.typicode.com/posts/1" /> */}
+      {/* <Article url="https://jsonplaceholder.typicode.com/posts/1" /> */}
     </div>
   );
 }

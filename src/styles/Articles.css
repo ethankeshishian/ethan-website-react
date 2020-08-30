@@ -1,3 +1,21 @@
-.info-text {
-  font-size: 20px;
+.articles-container {
+  display: grid;
+  /* grid-template-columns: minmax(min-content, 200px); */
+  grid-template-columns: repeat(
+    auto-fit,
+    /* compare auto-fill and auto-fit */
+      minmax(100px, calc((var(--max-body-width) / 3) - 24px))
+  );
+  /* grid-template-rows: auto; */
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+/* Handling narrow screens */
+/* padding*2 + img width + gap + txt width = 942 */
+@media screen and (max-width: 942px) {
+  .articles-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
+    /* calculate min width */
+  }
 }

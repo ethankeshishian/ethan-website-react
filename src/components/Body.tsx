@@ -29,7 +29,7 @@ function Body() {
               </div>
             </div>
           </div>
-          <div className="articles-container">
+          <div className="articles-component-container">
             <Articles />
           </div>
         </div>

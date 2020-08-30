@@ -8,4 +8,10 @@
   --small-heading-color: grey;
   --border-style: 2px solid grey;
   --background-light: white;
+
+  /* padding*2 + img width + gap + txt width = 942 */
+  --max-body-width: 942px;
+  /* padding*2 + img width = 382 */
+  --max-img-width: 382px;
+  --bio-width: 500px;
 }

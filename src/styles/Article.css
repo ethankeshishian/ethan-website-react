@@ -1,0 +1,25 @@
+.article-container {
+  border-radius: 25px;
+  /* check border-radii */
+  border: var(--border-style);
+  padding: 10px;
+  /* background-color: lightgrey; */
+}
+.article-description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.article-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.article-img {
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+}
+.article-image-container {
+}
