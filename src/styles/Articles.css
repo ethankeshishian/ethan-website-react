@@ -10,6 +10,10 @@
   row-gap: 20px;
   column-gap: 20px;
 }
+.articles-header {
+  font-size: 28px;
+  /* line-height: 10px; */
+}
 
 /* Handling narrow screens */
 /* padding*2 + img width + gap + txt width = 942 */

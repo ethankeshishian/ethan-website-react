@@ -3,7 +3,7 @@
   padding: 16px;
   grid-template-areas: "img txt" "articles articles";
   column-gap: 60px;
-  row-gap: 16px;
+  row-gap: 20px;
 }
 
 .image-container {
@@ -32,11 +32,11 @@
   max-width: 500px;
   max-height: 500px;
 }
-.title {
+.body-title {
   font-size: 32px;
   line-height: 10px;
 }
-.bio {
+.body-bio {
   text-align: justify;
   font-size: 24px;
 }

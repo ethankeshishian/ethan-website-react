@@ -8,6 +8,7 @@
   --small-heading-color: grey;
   --border-style: 2px solid grey;
   --background-light: white;
+  --border-color: grey;
 
   /* padding*2 + img width + gap + txt width = 942 */
   --max-body-width: 942px;
