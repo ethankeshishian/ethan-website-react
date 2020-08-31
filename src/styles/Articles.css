@@ -3,8 +3,7 @@
   /* grid-template-columns: minmax(min-content, 200px); */
   grid-template-columns: repeat(
     auto-fit,
-    /* compare auto-fill and auto-fit */
-      minmax(100px, calc((var(--max-body-width) / 3) - 24px))
+    minmax(100px, calc((var(--max-body-width) / 3) - 24px))
   );
   /* grid-template-rows: auto; */
   row-gap: 20px;
@@ -14,7 +13,6 @@
   font-size: 28px;
   /* line-height: 10px; */
 }
-
 /* Handling narrow screens */
 /* padding*2 + img width + gap + txt width = 942 */
 @media screen and (max-width: 942px) {
