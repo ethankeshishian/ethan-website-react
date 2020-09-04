@@ -6,6 +6,7 @@ import {
   INSTAGRAM_LINK,
   TWITTER_LINK,
   SPOTIFY_LINK,
+  GOODREADS_LINK,
   EMAIL_LINK,
   buttonType,
   linkType,
@@ -67,6 +68,15 @@ function SocialMediaLinks() {
       >
         <h4 className="link">Spotify</h4>
       </a>
+      <a
+        href={GOODREADS_LINK}
+        className="link-container"
+        onClick={() => handleClick(linkType.Goodreads)}
+        onMouseDown={(event) => middleMouseHandler(event, linkType.Goodreads)}
+      >
+        <h4 className="link">Goodreads</h4>
+      </a>
+
       <a
         href={EMAIL_LINK}
         className="link-container"

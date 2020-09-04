@@ -8,6 +8,7 @@ import {
   faInstagram,
   faTwitter,
   faSpotify,
+  faGoodreadsG,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -16,6 +17,7 @@ import {
   INSTAGRAM_LINK,
   TWITTER_LINK,
   SPOTIFY_LINK,
+  GOODREADS_LINK,
   EMAIL_LINK,
   buttonType,
   linkType,
@@ -90,6 +92,18 @@ function SocialMediaIcons() {
           <FontAwesomeIcon
             icon={faSpotify}
             className="fa-spotify social-icons"
+          />
+        </div>
+      </a>
+      <a
+        href={GOODREADS_LINK}
+        onClick={() => handleClick(linkType.Goodreads)}
+        onMouseDown={(event) => middleMouseHandler(event, linkType.Goodreads)}
+      >
+        <div className="social-container goodreads">
+          <FontAwesomeIcon
+            icon={faGoodreadsG}
+            className="fa-goodreads social-icons"
           />
         </div>
       </a>

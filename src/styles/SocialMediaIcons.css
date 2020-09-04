@@ -53,6 +53,16 @@
   font-size: 25px;
 }
 
+.fa-goodreads,
+.goodreads {
+  background: var(--goodreads-color);
+  color: var(--goodreads-color-outline);
+  font-size: 25px;
+}
+.goodreads {
+  box-shadow: inset 0px 0px 0px 1px var(--goodreads-color-outline);
+}
+
 .social-container {
   display: flex;
   justify-content: center;

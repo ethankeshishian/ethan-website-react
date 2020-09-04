@@ -5,6 +5,7 @@ export const GITHUB_LINK = "https://github.com/ethankeshishian";
 export const TWITTER_LINK = "https://twitter.com/ethankeshishian";
 export const INSTAGRAM_LINK = "https://instagram.com/ethankeshishian";
 export const SPOTIFY_LINK = "https://open.spotify.com/user/baklou";
+export const GOODREADS_LINK = "https://www.goodreads.com/ethankeshishian";
 export const EMAIL_LINK = "mailto:ethan@ethank.tech";
 export enum buttonType {
   Round = "round",
@@ -16,6 +17,7 @@ export enum linkType {
   Twitter = "Twitter",
   Instagram = "Instagram",
   Spotify = "Spotify",
+  Goodreads = "Goodreads",
   Email = "Email",
 }
 
