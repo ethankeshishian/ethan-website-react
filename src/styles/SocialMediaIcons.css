@@ -59,9 +59,9 @@
   color: var(--goodreads-color-outline);
   font-size: 25px;
 }
-.goodreads {
+/* .goodreads {
   box-shadow: inset 0px 0px 0px 1px var(--goodreads-color-outline);
-}
+} */
 
 .social-container {
   display: flex;
