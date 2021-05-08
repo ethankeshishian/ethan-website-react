@@ -42,3 +42,10 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Notes on deployment
+
+To deploy, make sure firebase is installed with `npm install -g firebase-tools`. Then run:
+
+1. `yarn build`
+2. `firebase deploy -m "Message here"`
