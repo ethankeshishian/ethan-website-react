@@ -1,5 +1,5 @@
-import React from "react";
-import "../styles/MyHeader.css";
+import React from 'react';
+import '../styles/MyHeader.css';
 
 function MyHeader() {
   return (
@@ -7,7 +7,9 @@ function MyHeader() {
       <a href="#" className="main-heading">
         <h1>Ethan Keshishian</h1>
       </a>
-      <p className="subtext">Software Engineer | UCLA Computer Science</p>
+      <p className="subtext">
+        Software Engineer | Founder | UCLA Computer Science
+      </p>
     </div>
   );
 }
