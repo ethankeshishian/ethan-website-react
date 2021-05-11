@@ -3,15 +3,11 @@
   justify-content: space-evenly;
   border-top: var(--border-style);
   background-color: var(--background-light);
+  padding: 10px;
 }
 .name {
   color: var(--small-heading-color);
+  margin: 0px;
 }
-.links-container,
-.name {
-  padding: 10px;
-}
-
 .links-container {
-  margin-bottom: 20px;
 }
