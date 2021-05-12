@@ -1,9 +1,17 @@
+.app-fade {
+  animation: appfade 0.5s ease-in;
+}
+@keyframes appfade {
+  0% {
+    opacity: 0;
+  }
+}
 .App {
   display: grid;
   grid-template-areas:
-    "header"
-    "body"
-    "footer";
+    'header'
+    'body'
+    'footer';
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
   height: 100vh;
