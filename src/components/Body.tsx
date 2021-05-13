@@ -1,10 +1,16 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import Ethan from '../assets/Ethan2.jpg';
 import SocialMediaIcons from '../components/SocialMediaIcons';
+import { RootState } from '../redux/reducers';
 import '../styles/Body.css';
 import Articles from './Articles';
 
 function Body() {
+  const dispatch = useDispatch();
+  const imageLoaded = useSelector(
+    (state: RootState) => state.readyToLoad.imageLoaded
+  );
   return (
     <>
       <link
@@ -14,17 +20,28 @@ function Body() {
       <div className="main-container">
         <div className="body-container">
           <div className="image-container">
-            <img className="image" src={Ethan} alt="Ethan Keshishian" />
+            <img
+              className="image"
+              src={Ethan}
+              alt="Ethan Keshishian"
+              onLoad={() =>
+                dispatch({ type: 'EDIT_IMAGE_LOADED', payload: true })
+              }
+            />
           </div>
           <div className="text-container">
             <div className="text-content-container">
-              <h2 className="title fade-1">Hi, I'm Ethan</h2>
-              <p className="bio fade-2">
+              <h2 className={imageLoaded ? 'title fade-1' : 'title'}>
+                Hi, I'm Ethan
+              </h2>
+              <p className={imageLoaded ? 'bio fade-2' : 'bio'}>
                 I’m a computer science student at UCLA, class of 2023. Check out
                 my LinkedIn for more on what I do, or check out my GitHub for
                 information on some of my projects.
               </p>
-              <div className="social-icons fade-3">
+              <div
+                className={imageLoaded ? 'social-icons fade-3' : 'social-icons'}
+              >
                 <SocialMediaIcons />
               </div>
             </div>

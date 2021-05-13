@@ -6,6 +6,9 @@
     opacity: 0;
   }
 }
+.notReadyToLoad {
+  opacity: 0;
+}
 .App {
   display: grid;
   grid-template-areas:
