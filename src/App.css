@@ -1,3 +1,6 @@
+:focus {
+  outline: none;
+}
 .app-fade {
   animation: appfade 0.5s ease-in;
 }

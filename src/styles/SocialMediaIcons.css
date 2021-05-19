@@ -64,6 +64,7 @@
   border-radius: 50%;
   transition: all 0.1s ease-in-out;
 }
-.social-container:hover {
+.social-icon-link:hover .social-container,
+.social-icon-link:focus .social-container {
   transform: scale(1.1);
 }
