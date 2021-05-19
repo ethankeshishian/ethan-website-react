@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react';
-import '../styles/SocialMediaIcons.css';
+import './SocialMediaIcons.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLinkedin,
@@ -20,7 +20,7 @@ import {
   buttonType,
   linkType,
   linkEvent,
-} from '../constants';
+} from '../../constants';
 
 function SocialMediaIcons() {
   function handleClick(site: string) {

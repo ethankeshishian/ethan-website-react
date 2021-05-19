@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import './constants.css';
 import Body from './components/Body';
-import MyHeader from './components/MyHeader';
-import MyFooter from './components/MyFooter';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import ReactGA from 'react-ga';
 import { useSelector } from 'react-redux';
 import { RootState } from './redux/reducers';
@@ -19,13 +19,13 @@ function App() {
   return (
     <div className={imageLoaded ? 'App app-fade' : 'App notReadyToLoad'}>
       <div className="header">
-        <MyHeader />
+        <Header />
       </div>
       <div className="body">
         <Body />
       </div>
       <div className="footer">
-        <MyFooter />
+        <Footer />
       </div>
     </div>
   );

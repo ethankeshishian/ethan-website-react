@@ -1,8 +1,8 @@
-import React from "react";
-import "../styles/MyFooter.css";
-import SocialMediaLinks from "../components/SocialMediaLinks";
+import React from 'react';
+import './Footer.css';
+import SocialMediaLinks from '../SocialMediaLinks';
 
-function MyFooter() {
+function Footer() {
   return (
     <div className="footer-container">
       <h3 className="name">Ethan Keshishian</h3>
@@ -12,4 +12,4 @@ function MyFooter() {
     </div>
   );
 }
-export default MyFooter;
+export default Footer;

@@ -1,0 +1,119 @@
+[debug] [2021-05-19T07:37:55.100Z] ----------------------------------------------------------------------
+[debug] [2021-05-19T07:37:55.103Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ehk20\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy -m Updated project structure
+[debug] [2021-05-19T07:37:55.104Z] CLI Version:   9.10.2
+[debug] [2021-05-19T07:37:55.104Z] Platform:      win32
+[debug] [2021-05-19T07:37:55.104Z] Node Version:  v14.16.0
+[debug] [2021-05-19T07:37:55.105Z] Time:          Wed May 19 2021 00:37:55 GMT-0700 (Pacific Daylight Time)
+[debug] [2021-05-19T07:37:55.105Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-19T07:37:55.113Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-19T07:37:55.114Z] > authorizing via signed-in user (keshishianethan@gmail.com)
+[debug] [2021-05-19T07:37:55.114Z] [iam] checking project ethan-website-285700 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-05-19T07:37:55.116Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ethan-website-285700:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-05-19T07:37:55.400Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 19 May 2021 07:37:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=174","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-19T07:37:55.402Z] > refreshing access token with scopes: []
+[debug] [2021-05-19T07:37:55.402Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-19T07:37:55.520Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Wed, 19 May 2021 07:37:55 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-19T07:37:55.534Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ethan-website-285700 [none]
+[debug] [2021-05-19T07:37:55.733Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ethan-website-285700 200
+[debug] [2021-05-19T07:37:55.734Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ethan-website-285700 {"projectId":"ethan-website-285700","projectNumber":"708429308694","displayName":"ethan-website","name":"projects/ethan-website-285700","resources":{"hostingSite":"ethan-website-285700","realtimeDatabaseInstance":"ethan-website-285700"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'ethan-website-285700'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-05-19T07:37:55.738Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-19T07:37:55.738Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-19T07:37:55.870Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Wed, 19 May 2021 07:37:55 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-19T07:37:55.878Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ethan-website-285700/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-05-19T07:37:56.556Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 19 May 2021 07:37:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[ethan-website-285700]: beginning deploy... 
+[info] i  hosting[ethan-website-285700]: found 23 files in build 
+[debug] [2021-05-19T07:37:56.781Z] > refreshing access token with scopes: []
+[debug] [2021-05-19T07:37:56.781Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-19T07:37:56.783Z] [hosting] hash cache [YnVpbGQ] stored for 23 files
+[debug] [2021-05-19T07:37:56.784Z] [hosting][hash queue][FINAL] {"max":204,"min":2,"avg":14.347826086956522,"active":0,"complete":23,"success":23,"errored":0,"retried":0,"total":23,"elapsed":212}
+[debug] [2021-05-19T07:37:56.922Z] <<< HTTP RESPONSE 200 {"date":"Wed, 19 May 2021 07:37:56 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-19T07:37:56.935Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/ethan-website-285700/versions/a4e964edb8147ebc:populateFiles [none]
+[debug] [2021-05-19T07:37:56.935Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/ethan-website-285700/versions/a4e964edb8147ebc:populateFiles {"files":{"/apple-touch-icon.png":"9f506fb5b25b76aa03c6d1f6ec929149d86d15678bc2815ab8df57fefba53cd7","/favicon-16x16.png":"efd2e77f9a70b6707311ebc73ac67616f68728f49d7ee3bc3c08e8f9f65f9a1c","/favicon-32x32.png":"68ea7afe9c0a3dff895f253a77ada831bbdf7466dcc8e3255ed086265e617982","/favicon.ico":"0517013da02289b18153efb78929a0553b06eb6c08bd3249d44814c1876c995a","/logo192.png":"370d468c3305bc46cba4bf6b95513e609c6825b6a80108dc6abebc18ec30f015","/logo512.png":"c42233e9067b36b3b0581a90a0369321dc7bb161a47978f2903b7f63615f54da","/manifest.json":"c54b0cbe7d0021fe82800fcc4662c66d3ab3a7fd60374ea994369fa4587634ac","/ogImage.png":"0f553168fbd805ce39679b0611621d4d241bff4af4f48768858ec3409b0b8af8","/robots.txt":"b2090cf9761ef60aa06e4fab97679bd43dfa5e5df073701ead5879d7c68f1ec5","/asset-manifest.json":"7c3c91a471780b2957a3db8a6395294ebc790a85b794f281c1c2ed2f3731dbb4","/index.html":"c243bad3f38a45394e7adbd6add47147db6bd906d38c2280a25750cfec8b443f","/precache-manifest.19e150817489399855621fa22f3beb08.js":"263b7e4348c561b07a438aa09521c8a15370dfc1c4167c28268d2020f928c3c7","/static/css/main.438feb28.chunk.css":"19f810d293ebea0030cfb963a1e6cc82475c75bed12bc5a4b79646e761221a9a","/service-worker.js":"a6ba8bfcb79faaa611215674712e4cc35b27cf02402bfa2dd3d42b52fc348f87","/static/js/2.9c923102.chunk.js.LICENSE.txt":"b8f1c9f45a7a833dff116175664d9ed1f2594752d7b0db8bfde51a03ccc015ec","/static/css/main.438feb28.chunk.css.map":"91abbd9a8324e884961a55ab33759c02dd543f908d657197ffcb00e4e735a384","/static/js/main.f188e2ad.chunk.js":"e29b12ee23b9328c2de56f3bf71f199c45125fc784a0cedabfca7b5f7b812829","/static/js/runtime-main.f613fd03.js":"98c71f7d5764bae93da9487c0142d142a7881cf0fe16bc9e2e4feb3271c47c16","/static/js/runtime-main.f613fd03.js.map":"15b5c21225dae5c7eebf6db51e0065e7554117c1737c01f7639dc5c54b60b6fd","/static/js/main.f188e2ad.chunk.js.map":"7adff83a9d72b02c0f37cd271930039506c4389057a552f433f2d3adf411534f","/static/media/Ethan2.c791ea2f.jpg":"6051f3126d6bd6abbba48bad58af6f356d1a1102cfac7d960df64f8fe13586bb","/static/js/2.9c923102.chunk.js":"796ef77050142cc5971e85e5cc3f62c6f3ab118f0988cc275dfe513dd85b0a3f","/static/js/2.9c923102.chunk.js.map":"2267863579558056d7c85ab542442326a37f50773763d95fc6430eb0f7145c2b"}}
+[debug] [2021-05-19T07:37:57.573Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/ethan-website-285700/versions/a4e964edb8147ebc:populateFiles 200
+[debug] [2021-05-19T07:37:57.573Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/ethan-website-285700/versions/a4e964edb8147ebc:populateFiles {"uploadRequiredHashes":["7adff83a9d72b02c0f37cd271930039506c4389057a552f433f2d3adf411534f","e29b12ee23b9328c2de56f3bf71f199c45125fc784a0cedabfca7b5f7b812829","19f810d293ebea0030cfb963a1e6cc82475c75bed12bc5a4b79646e761221a9a","c243bad3f38a45394e7adbd6add47147db6bd906d38c2280a25750cfec8b443f","a6ba8bfcb79faaa611215674712e4cc35b27cf02402bfa2dd3d42b52fc348f87","7c3c91a471780b2957a3db8a6395294ebc790a85b794f281c1c2ed2f3731dbb4","91abbd9a8324e884961a55ab33759c02dd543f908d657197ffcb00e4e735a384","263b7e4348c561b07a438aa09521c8a15370dfc1c4167c28268d2020f928c3c7"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files"}
+[debug] [2021-05-19T07:37:57.575Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/7adff83a9d72b02c0f37cd271930039506c4389057a552f433f2d3adf411534f [none]
+[debug] [2021-05-19T07:37:57.576Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/7adff83a9d72b02c0f37cd271930039506c4389057a552f433f2d3adf411534f [stream]
+[debug] [2021-05-19T07:37:57.577Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/e29b12ee23b9328c2de56f3bf71f199c45125fc784a0cedabfca7b5f7b812829 [none]
+[debug] [2021-05-19T07:37:57.577Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/e29b12ee23b9328c2de56f3bf71f199c45125fc784a0cedabfca7b5f7b812829 [stream]
+[debug] [2021-05-19T07:37:57.578Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/19f810d293ebea0030cfb963a1e6cc82475c75bed12bc5a4b79646e761221a9a [none]
+[debug] [2021-05-19T07:37:57.578Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/19f810d293ebea0030cfb963a1e6cc82475c75bed12bc5a4b79646e761221a9a [stream]
+[debug] [2021-05-19T07:37:57.579Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/c243bad3f38a45394e7adbd6add47147db6bd906d38c2280a25750cfec8b443f [none]
+[debug] [2021-05-19T07:37:57.579Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/c243bad3f38a45394e7adbd6add47147db6bd906d38c2280a25750cfec8b443f [stream]
+[debug] [2021-05-19T07:37:57.579Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/a6ba8bfcb79faaa611215674712e4cc35b27cf02402bfa2dd3d42b52fc348f87 [none]
+[debug] [2021-05-19T07:37:57.579Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/a6ba8bfcb79faaa611215674712e4cc35b27cf02402bfa2dd3d42b52fc348f87 [stream]
+[debug] [2021-05-19T07:37:57.580Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/7c3c91a471780b2957a3db8a6395294ebc790a85b794f281c1c2ed2f3731dbb4 [none]
+[debug] [2021-05-19T07:37:57.580Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/7c3c91a471780b2957a3db8a6395294ebc790a85b794f281c1c2ed2f3731dbb4 [stream]
+[debug] [2021-05-19T07:37:57.580Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/91abbd9a8324e884961a55ab33759c02dd543f908d657197ffcb00e4e735a384 [none]
+[debug] [2021-05-19T07:37:57.580Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/91abbd9a8324e884961a55ab33759c02dd543f908d657197ffcb00e4e735a384 [stream]
+[debug] [2021-05-19T07:37:57.581Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/263b7e4348c561b07a438aa09521c8a15370dfc1c4167c28268d2020f928c3c7 [none]
+[debug] [2021-05-19T07:37:57.581Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/263b7e4348c561b07a438aa09521c8a15370dfc1c4167c28268d2020f928c3c7 [stream]
+[debug] [2021-05-19T07:37:57.581Z] [hosting][populate queue][FINAL] {"max":795,"min":795,"avg":795,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":801}
+[debug] [2021-05-19T07:37:57.582Z] [hosting] uploads queued: 8
+[debug] [2021-05-19T07:37:58.289Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/7c3c91a471780b2957a3db8a6395294ebc790a85b794f281c1c2ed2f3731dbb4 200
+[debug] [2021-05-19T07:37:58.290Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/7c3c91a471780b2957a3db8a6395294ebc790a85b794f281c1c2ed2f3731dbb4 [stream]
+[debug] [2021-05-19T07:37:58.424Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/e29b12ee23b9328c2de56f3bf71f199c45125fc784a0cedabfca7b5f7b812829 200
+[debug] [2021-05-19T07:37:58.425Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/e29b12ee23b9328c2de56f3bf71f199c45125fc784a0cedabfca7b5f7b812829 [stream]
+[debug] [2021-05-19T07:37:58.434Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/7adff83a9d72b02c0f37cd271930039506c4389057a552f433f2d3adf411534f 200
+[debug] [2021-05-19T07:37:58.434Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/7adff83a9d72b02c0f37cd271930039506c4389057a552f433f2d3adf411534f [stream]
+[debug] [2021-05-19T07:37:58.437Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/c243bad3f38a45394e7adbd6add47147db6bd906d38c2280a25750cfec8b443f 200
+[debug] [2021-05-19T07:37:58.437Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/c243bad3f38a45394e7adbd6add47147db6bd906d38c2280a25750cfec8b443f [stream]
+[debug] [2021-05-19T07:37:58.468Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/19f810d293ebea0030cfb963a1e6cc82475c75bed12bc5a4b79646e761221a9a 200
+[debug] [2021-05-19T07:37:58.469Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/19f810d293ebea0030cfb963a1e6cc82475c75bed12bc5a4b79646e761221a9a [stream]
+[debug] [2021-05-19T07:37:58.503Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/a6ba8bfcb79faaa611215674712e4cc35b27cf02402bfa2dd3d42b52fc348f87 200
+[debug] [2021-05-19T07:37:58.503Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/a6ba8bfcb79faaa611215674712e4cc35b27cf02402bfa2dd3d42b52fc348f87 [stream]
+[debug] [2021-05-19T07:37:58.513Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/263b7e4348c561b07a438aa09521c8a15370dfc1c4167c28268d2020f928c3c7 200
+[debug] [2021-05-19T07:37:58.513Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/263b7e4348c561b07a438aa09521c8a15370dfc1c4167c28268d2020f928c3c7 [stream]
+[debug] [2021-05-19T07:37:58.536Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/91abbd9a8324e884961a55ab33759c02dd543f908d657197ffcb00e4e735a384 200
+[debug] [2021-05-19T07:37:58.536Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ethan-website-285700/versions/a4e964edb8147ebc/files/91abbd9a8324e884961a55ab33759c02dd543f908d657197ffcb00e4e735a384 [stream]
+[debug] [2021-05-19T07:37:58.537Z] [hosting][upload queue][FINAL] {"max":961,"min":715,"avg":876.625,"active":0,"complete":8,"success":8,"errored":0,"retried":0,"total":8,"elapsed":964}
+[info] +  hosting[ethan-website-285700]: file upload complete 
+[debug] [2021-05-19T07:37:58.538Z] [hosting] deploy completed after 1979ms
+[debug] [2021-05-19T07:37:58.539Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "ethan-website-285700"
+    },
+    "site": "ethan-website-285700",
+    "version": "sites/ethan-website-285700/versions/a4e964edb8147ebc"
+  }
+]
+[info] i  hosting[ethan-website-285700]: finalizing version... 
+[debug] [2021-05-19T07:37:58.543Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-19T07:37:58.544Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-19T07:37:58.678Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 19 May 2021 07:37:58 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-19T07:37:58.688Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/ethan-website-285700/versions/a4e964edb8147ebc?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2021-05-19T07:37:59.155Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 19 May 2021 07:37:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-19T07:37:59.155Z] [hosting] finalized version for ethan-website-285700: {"name":"sites/ethan-website-285700/versions/a4e964edb8147ebc","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-05-19T07:37:56.288931Z","createUser":{"email":"keshishianethan@gmail.com"},"finalizeTime":"2021-05-19T07:37:59.143204Z","finalizeUser":{"email":"keshishianethan@gmail.com"}}
+[info] +  hosting[ethan-website-285700]: version finalized 
+[info] i  hosting[ethan-website-285700]: releasing new version... 
+[debug] [2021-05-19T07:37:59.157Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ethan-website-285700/releases?version_name=sites/ethan-website-285700/versions/a4e964edb8147ebc  
+ {"message":"Updated project structure"}
+[debug] [2021-05-19T07:38:20.213Z] Error: connect ETIMEDOUT 142.250.217.138:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 142.250.217.138:443

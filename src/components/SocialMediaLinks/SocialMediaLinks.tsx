@@ -1,5 +1,5 @@
-import React from "react";
-import "../styles/SocialMediaLinks.css";
+import React from 'react';
+import './SocialMediaLinks.css';
 import {
   LINKEDIN_LINK,
   GITHUB_LINK,
@@ -10,7 +10,7 @@ import {
   buttonType,
   linkType,
   linkEvent,
-} from "../constants";
+} from '../../constants';
 
 function SocialMediaLinks() {
   function handleClick(site: string) {

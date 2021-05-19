@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/MyHeader.css';
+import './Header.css';
 
-function MyHeader() {
+function Header() {
   return (
     <div className="heading-container">
       <a href="/" className="main-heading-link">
@@ -13,4 +13,4 @@ function MyHeader() {
     </div>
   );
 }
-export default MyHeader;
+export default Header;

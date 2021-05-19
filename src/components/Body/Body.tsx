@@ -1,10 +1,10 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import Ethan from '../assets/Ethan2.jpg';
-import SocialMediaIcons from '../components/SocialMediaIcons';
-import { RootState } from '../redux/reducers';
-import '../styles/Body.css';
-import Articles from './Articles';
+import Ethan from '../../assets/Ethan2.jpg';
+import SocialMediaIcons from '../SocialMediaIcons';
+import { RootState } from '../../redux/reducers';
+import './Body.css';
+import Articles from '../Articles';
 
 function Body() {
   const dispatch = useDispatch();
