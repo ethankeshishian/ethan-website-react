@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   padding: 24px;
-  padding-left: clamp(24px, 5vw, 144px);
-  padding-right: clamp(24px, 5vw, 144px);
+  padding-left: clamp(12px, 5vw, 144px);
+  padding-right: clamp(12px, 5vw, 144px);
   background-color: var(--background-color);
   box-shadow: 0 2px 4px rgb(45 62 80 / 12%);
 }
