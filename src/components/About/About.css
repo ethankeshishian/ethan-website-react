@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 .about-container {
   display: grid;
@@ -80,7 +79,7 @@
 }
 .title {
   font-size: 32px;
-  line-height: 10px;
+  margin: 0;
 }
 .bio {
   text-align: justify;

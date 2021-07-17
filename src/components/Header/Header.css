@@ -1,7 +1,6 @@
 .header-container {
   display: flex;
   justify-content: space-between;
-  border-top: var(--border-style);
   background-color: var(--background-light);
   padding: 24px;
   padding-left: clamp(24px, 5vw, 144px);

@@ -13,20 +13,30 @@
   opacity: 0;
 }
 .App {
-  display: grid;
+  /* display: grid;
   grid-template-areas:
     'header'
     'body'
     'footer';
   grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; */
   height: 100vh;
 }
 .header {
   grid-area: header;
+  /* After removing footer */
+  position: sticky;
+  top: 0;
+  z-index: 1; /* This fixes animated components overlapping header */
 }
 .body {
   grid-area: body;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  min-height: calc(100vh - 24px - 24px - 32px);
+  width: 100vw;
 
   /* height: 100; */
   /* flex: 1; */

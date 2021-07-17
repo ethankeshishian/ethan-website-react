@@ -3,7 +3,6 @@ import './App.css';
 import './constants.css';
 import Body from './components/Body';
 import Header from './components/Header';
-import Footer from './components/Footer';
 import ReactGA from 'react-ga';
 import { useSelector } from 'react-redux';
 import { RootState } from './redux/reducers';

@@ -32,7 +32,7 @@ function About() {
           <div className="text-container">
             <div className="text-content-container">
               <h2 className={imageLoaded ? 'title fade-1' : 'title'}>
-                Hi, I'm Ethan
+                Hi, I'm Ethan Keshishian
               </h2>
               <p className={imageLoaded ? 'bio fade-2' : 'bio'}>
                 I’m a computer science student at UCLA, class of 2023. Check out
