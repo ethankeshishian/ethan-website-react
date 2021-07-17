@@ -23,6 +23,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "redux": "^4.1.0",
+    "redux-persist": "^6.0.0",
     "styled-jsx": "^3.4.4",
     "typescript": "~3.8"
   },
