@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import ReactGA from 'react-ga';
 import { useSelector } from 'react-redux';
 import { RootState } from './redux/reducers';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   const trackingID = 'UA-171410103-1';
@@ -18,15 +19,14 @@ function App() {
   );
   return (
     <div className={imageLoaded ? 'App app-fade' : 'App notReadyToLoad'}>
-      <div className="header">
-        <Header />
-      </div>
-      <div className="body">
-        <Body />
-      </div>
-      <div className="footer">
-        <Footer />
-      </div>
+      <Router>
+        <div className="header">
+          <Header />
+        </div>
+        <div className="body">
+          <Body />
+        </div>
+      </Router>
     </div>
   );
 }

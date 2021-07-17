@@ -4,7 +4,7 @@
   align-items: center;
   height: 100%;
 }
-.body-container {
+.about-container {
   display: grid;
   padding: 16px;
   grid-template-areas: 'txt img' 'articles articles';
@@ -94,7 +94,7 @@
 /* Handling narrow screens */
 /* padding*2 + img width + gap + txt width = 942 */
 @media screen and (max-width: 942px) {
-  .body-container {
+  .about-container {
     grid-template-areas: 'img' 'txt' 'articles';
   }
 }
