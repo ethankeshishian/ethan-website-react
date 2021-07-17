@@ -7,6 +7,7 @@
   --email-color: #555;
   --header-height: calc(24px + 24px + 32px);
   --border-style: 2px solid grey;
+  /* Light mode themes */
   --small-heading-color: #666;
   --large-heading-color: black;
   --background-color: white;
@@ -14,7 +15,9 @@
 }
 /* Dark mode themes */
 
-/* --small-heading-color: #666;
+body.dark-mode {
+  --small-heading-color: #666;
   --large-heading-color: white;
   --background-color: black;
-  --text-color: white; */
+  --text-color: white;
+}
