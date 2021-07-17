@@ -1,17 +1,12 @@
 import React from 'react';
 import './HeaderLinks.css';
 // import {
-//   LINKEDIN_LINK,
-//   GITHUB_LINK,
-//   INSTAGRAM_LINK,
-//   TWITTER_LINK,
-//   SPOTIFY_LINK,
-//   EMAIL_LINK,
 //   buttonType,
 //   linkType,
 //   linkEvent,
 // } from '../../constants';
 import { NavLink } from 'react-router-dom';
+import ThemeButton from '../ThemeButton';
 
 function HeaderLinks() {
   // function handleClick(site: string) {
@@ -44,6 +39,7 @@ function HeaderLinks() {
       >
         <h4 className="link">Schedule</h4>
       </NavLink>
+      <ThemeButton />
     </div>
   );
 }

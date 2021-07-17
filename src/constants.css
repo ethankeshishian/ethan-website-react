@@ -5,12 +5,23 @@
   --twitter-color: #55acee;
   --spotify-color: #1bd760;
   --email-color: #555;
+  --header-height: calc(24px + 24px + 32px);
+  --border-style: 2px solid grey;
+  /* Light mode themes */
   --small-heading-color: #666;
   --large-heading-color: black;
   --border-style: 2px solid grey;
-  --background-light: white;
   --background-dark: black;
-  --accent-light: rgb(33, 150, 243);
+  --accent-color: rgb(33, 150, 243);
+  --background-color: white;
+  --text-color: black;
+}
+/* Dark mode themes */
 
-  --header-height: calc(24px + 24px + 32px);
+body.dark-mode {
+  --small-heading-color: #666;
+  --large-heading-color: white;
+  --background-color: black;
+  --text-color: white;
+  --accent-color: #f85846;
 }
