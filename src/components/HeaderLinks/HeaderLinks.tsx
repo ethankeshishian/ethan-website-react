@@ -27,7 +27,7 @@ function HeaderLinks() {
   // };
 
   return (
-    <div className="social-links-container">
+    <div className="header-links-container">
       <NavLink
         exact
         to="/"
