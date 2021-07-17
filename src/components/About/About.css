@@ -20,7 +20,7 @@
   max-height: 350px;
   min-width: 0px;
   min-height: 0px;
-  border: 5 solid black;
+  border: 5 solid var(--large-heading-color);
   overflow: 'hidden';
 }
 
@@ -29,7 +29,7 @@
   width: 100%;
   height: 100%;
   border-width: 2px;
-  border-color: black;
+  border-color: var(--large-heading-color);
   border-style: solid;
   box-sizing: border-box;
 }
@@ -78,10 +78,12 @@
   }
 }
 .title {
+  color: var(--large-heading-color);
   font-size: 32px;
   margin: 0;
 }
 .bio {
+  color: var(--text-color);
   text-align: justify;
   font-size: 24px;
 }

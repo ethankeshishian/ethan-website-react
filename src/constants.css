@@ -5,11 +5,16 @@
   --twitter-color: #55acee;
   --spotify-color: #1bd760;
   --email-color: #555;
+  --header-height: calc(24px + 24px + 32px);
+  --border-style: 2px solid grey;
   --small-heading-color: #666;
   --large-heading-color: black;
-  --border-style: 2px solid grey;
-  --background-light: white;
-  --background-dark: black;
-
-  --header-height: calc(24px + 24px + 32px);
+  --background-color: white;
+  --text-color: black;
 }
+/* Dark mode themes */
+
+/* --small-heading-color: #666;
+  --large-heading-color: white;
+  --background-color: black;
+  --text-color: white; */

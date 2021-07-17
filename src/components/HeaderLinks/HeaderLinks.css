@@ -15,7 +15,7 @@
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: var(--background-dark);
+  background-color: var(--large-heading-color);
   display: block;
   transform: scaleX(0);
   -webkit-transform: scaleX(0);
