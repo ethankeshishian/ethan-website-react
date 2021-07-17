@@ -6,6 +6,8 @@
   --spotify-color: #1bd760;
   --email-color: #555;
   --small-heading-color: #666;
+  --large-heading-color: black;
   --border-style: 2px solid grey;
   --background-light: white;
+  --background-dark: black;
 }

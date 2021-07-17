@@ -1,13 +1,13 @@
 .header-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   border-top: var(--border-style);
   background-color: var(--background-light);
   padding: 24px;
-}
-.name {
-  color: var(--small-heading-color);
-  margin: 0px;
+  padding-left: clamp(24px, 5vw, 144px);
+  padding-right: clamp(24px, 5vw, 144px);
+  background-color: var(--background-light);
+  box-shadow: 0 2px 4px rgb(45 62 80 / 12%);
 }
 .links-container {
   display: flex;
@@ -24,6 +24,7 @@
   user-select: text; /* Likely future */
 }
 .main-heading {
+  color: var(--background-dark);
   margin: 0px;
   position: relative;
 }
@@ -39,6 +40,7 @@
   transition: transform 150ms ease-in-out;
   transition: -webkit-transform 150ms ease-in-out;
 }
-.main-heading-link:focus .main-heading::after {
+.main-heading-link:focus .main-heading::after,
+.main-heading-link:hover .main-heading::after {
   transform: scaleX(1);
 }
