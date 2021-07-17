@@ -10,6 +10,7 @@
   --border-style: 2px solid grey;
   --background-light: white;
   --background-dark: black;
+  --accent-light: rgb(33, 150, 243);
 
   --header-height: calc(24px + 24px + 32px);
 }

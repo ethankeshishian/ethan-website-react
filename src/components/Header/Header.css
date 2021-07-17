@@ -31,8 +31,8 @@
   content: '';
   position: absolute;
   width: 100%;
-  height: 2px;
-  background-color: black;
+  height: 4px;
+  background-color: var(--accent-light);
   display: block;
   transform: scaleX(0);
   -webkit-transform: scaleX(0);
