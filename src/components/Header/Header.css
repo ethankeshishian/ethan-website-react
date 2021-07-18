@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   padding: 24px;
-  padding-left: clamp(12px, 5vw, 144px);
-  padding-right: clamp(12px, 5vw, 144px);
-  background-color: var(--background-color);
+  padding-left: clamp(16px, 5vw, 144px);
+  padding-right: clamp(16px, 5vw, 144px);
+  background-color: var(--background-overlay);
   box-shadow: 0 2px 4px rgb(45 62 80 / 12%);
 }
 .links-container {
@@ -41,4 +41,11 @@
 .main-heading-link:focus .main-heading::after,
 .main-heading-link:hover .main-heading::after {
   transform: scaleX(1);
+}
+
+@media screen and (max-width: 599px) {
+  .main-heading-link,
+  .links-container {
+    display: none;
+  }
 }

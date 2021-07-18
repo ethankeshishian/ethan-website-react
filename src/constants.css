@@ -11,13 +11,17 @@
   --small-heading-color: #666;
   --large-heading-color: black;
   --background-color: white;
+  --background-overlay: white;
   --text-color: black;
+  --divider-color: rgba(0, 0, 0, 0.12);
 }
 /* Dark mode themes */
 
 body.dark-mode {
   --small-heading-color: #666;
   --large-heading-color: white;
-  --background-color: black;
+  --background-color: #101010;
+  --background-overlay: #212121;
   --text-color: white;
+  --divider-color: var(--small-heading-color);
 }
