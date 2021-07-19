@@ -26,18 +26,18 @@ function HeaderLinks() {
       <NavLink
         exact
         to="/"
-        className="link-container"
+        className="header-link-container"
         activeClassName="active-link"
       >
-        <h4 className="link">About</h4>
+        <h4 className="header-link">About</h4>
       </NavLink>
       <NavLink
         exact
         to="/schedule"
-        className="link-container"
+        className="header-link-container"
         activeClassName="active-link"
       >
-        <h4 className="link">Schedule</h4>
+        <h4 className="header-link">Schedule</h4>
       </NavLink>
       <ThemeButton />
     </div>

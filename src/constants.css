@@ -14,14 +14,24 @@
   --background-dark: black;
   --accent-color: rgb(33, 150, 243);
   --background-color: white;
+  --background-overlay: white;
   --text-color: black;
+  --divider-color: rgba(0, 0, 0, 0.12);
+  --accent-color: rgb(33, 150, 243);
+  --accent-highlight: #ddf2ff;
+
+  /* Other */
+  --background-dark: #101010;
 }
 /* Dark mode themes */
 
 body.dark-mode {
   --small-heading-color: #666;
   --large-heading-color: white;
-  --background-color: black;
+  --background-color: #101010;
+  --background-overlay: #212121;
   --text-color: white;
+  --divider-color: var(--small-heading-color);
   --accent-color: #f85846;
+  --accent-highlight: #ffe5db;
 }

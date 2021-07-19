@@ -5,13 +5,13 @@
   row-gap: 0.4em;
   padding-left: 20px;
 }
-.link {
+.social-link {
   margin-bottom: 0px;
   color: var(--small-heading-color);
   margin-top: 0px;
   position: relative;
 }
-.link::after {
+.social-link::after {
   content: '';
   position: absolute;
   width: 100%;

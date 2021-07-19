@@ -826,7 +826,8 @@ mark {
   position: relative;
 }
 html {
-  --antd-wave-shadow-color: #1890ff;
+  /* Modified following value also. It controls the wave animation */
+  --antd-wave-shadow-color: var(--background-color); 
   --scroll-bar: 0;
 }
 [ant-click-animating-without-extra-node='true']::after,
