@@ -14,6 +14,8 @@
   --background-overlay: white;
   --text-color: black;
   --divider-color: rgba(0, 0, 0, 0.12);
+  /* Other */
+  --background-dark: #101010;
 }
 /* Dark mode themes */
 

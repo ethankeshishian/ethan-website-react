@@ -3,6 +3,7 @@ import About from '../About';
 import './Body.css';
 import { Switch, Route } from 'react-router-dom';
 import Schedule from '../Schedule';
+import { ZOOM } from '../../constants';
 
 function Body() {
   return (
@@ -13,6 +14,13 @@ function Body() {
       <Route exact path="/schedule">
         <Schedule />
       </Route>
+      <Route
+        path="/zoom"
+        component={() => {
+          window.location.href = ZOOM;
+          return null;
+        }}
+      />
     </Switch>
   );
 }

@@ -7,6 +7,7 @@ import ReactGA from 'react-ga';
 import { useSelector } from 'react-redux';
 import { RootState } from './redux/reducers';
 import { BrowserRouter as Router } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const trackingID = 'UA-171410103-1';
@@ -19,6 +20,7 @@ function App() {
   return (
     <div className={imageLoaded ? 'App app-fade' : 'App notReadyToLoad'}>
       <Router>
+        <ScrollToTop />
         <div className="header">
           <Header />
         </div>
