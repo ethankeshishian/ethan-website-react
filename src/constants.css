@@ -14,6 +14,9 @@
   --background-overlay: white;
   --text-color: black;
   --divider-color: rgba(0, 0, 0, 0.12);
+  --accent-color: rgb(33, 150, 243);
+  --accent-highlight: #ddf2ff;
+
   /* Other */
   --background-dark: #101010;
 }
@@ -26,4 +29,6 @@ body.dark-mode {
   --background-overlay: #212121;
   --text-color: white;
   --divider-color: var(--small-heading-color);
+  --accent-color: #f85846;
+  --accent-highlight: #ffe5db;
 }

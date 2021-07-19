@@ -5,6 +5,7 @@ import SocialMediaIcons from '../SocialMediaIcons';
 import { RootState } from '../../redux/reducers';
 import './About.css';
 import Articles from '../Articles';
+import { SPOTCLUB_LINK, UNICORNER_LINK } from '../../constants';
 
 function About() {
   const dispatch = useDispatch();
@@ -19,15 +20,17 @@ function About() {
       />
       <div className="main-container">
         <div className="about-container">
-          <div className="image-container">
-            <img
-              className="image"
-              src={Ethan}
-              alt="Ethan Keshishian"
-              onLoad={() =>
-                dispatch({ type: 'EDIT_IMAGE_LOADED', payload: true })
-              }
-            />
+          <div className="image-section-container">
+            <div className="image-container">
+              <img
+                className="image"
+                src={Ethan}
+                alt="Ethan Keshishian"
+                onLoad={() =>
+                  dispatch({ type: 'EDIT_IMAGE_LOADED', payload: true })
+                }
+              />
+            </div>
           </div>
           <div className="text-container">
             <div className="text-content-container">
@@ -35,9 +38,16 @@ function About() {
                 Hi, I'm Ethan Keshishian
               </h2>
               <p className={imageLoaded ? 'bio fade-2' : 'bio'}>
-                I’m a computer science student at UCLA, class of 2023. Check out
-                my LinkedIn for more on what I do, or check out my GitHub for
-                information on some of my projects.
+                I’m currently a computer science student at UCLA. I'm working on{' '}
+                <a className="link-container" href={UNICORNER_LINK}>
+                  <span className="link">Unicorner</span>
+                </a>
+                , a newsletter that breaks down up-and-coming startups every
+                week, and{' '}
+                <a className="link-container" href={SPOTCLUB_LINK}>
+                  <span className="link">SpotClub</span>
+                </a>
+                , a podcast building a community of innovators.
               </p>
               <div
                 className={imageLoaded ? 'social-icons fade-3' : 'social-icons'}

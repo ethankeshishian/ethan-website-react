@@ -6,6 +6,10 @@ export const TWITTER_LINK = 'https://twitter.com/ethankeshishian';
 export const INSTAGRAM_LINK = 'https://instagram.com/ethankeshishian';
 export const SPOTIFY_LINK = 'https://open.spotify.com/user/baklou';
 export const EMAIL_LINK = 'mailto:ethan@ethank.tech';
+
+export const UNICORNER_LINK = 'https://unicorner.news';
+export const SPOTCLUB_LINK = 'https://spotclub.live';
+
 export enum buttonType {
   Round = 'round',
   Footer = 'footer',

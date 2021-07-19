@@ -4,13 +4,13 @@
   column-gap: clamp(12px, 6vw, 48px);
   row-gap: 0.4em;
 }
-.link {
+.header-link {
   margin-bottom: 0px;
   color: var(--large-heading-color);
   margin-top: 0px;
   position: relative;
 }
-.link::after {
+.header-link::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -22,11 +22,11 @@
   transition: transform 150ms ease-in-out;
   transition: -webkit-transform 150ms ease-in-out;
 }
-.link-container {
+.header-link-container {
   text-decoration: none;
 }
-.link-container:hover .link::after,
-.link-container:focus .link::after,
-.active-link .link::after {
+.header-link-container:hover .header-link::after,
+.header-link-container:focus .header-link::after,
+.active-link .header-link::after {
   transform: scaleX(1);
 }
