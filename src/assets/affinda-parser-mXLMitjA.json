@@ -405,7 +405,7 @@
                     "isCurrent": false,
                     "rawText": "September 2020 – June 2022"
                 },
-                "jobDescription": "• Built multiple internal tools such as Gallery Maker, which enables hundreds of staffers to upload, rearrange, and caption images to design photo galleries for main news site. (Python, Django, TypeScript, React) ",
+                "jobDescription": "• Built multiple internal tools such as Gallery Maker, which enables hundreds of staffers to upload, rearrange, and caption images to design photo galleries for main news site. (Python, Django, TypeScript, React, Redux) ",
                 "occupation": {
                     "jobTitle": "Internal Tools Developer",
                     "jobTitleNormalized": "Tools Developer",
