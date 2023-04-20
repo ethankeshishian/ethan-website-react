@@ -1,0 +1,26 @@
+.resume-main-block {
+    color: var(--text-color);
+    display: block;
+    margin: 16px;
+}
+
+.resume-section-title {
+    color: var(--large-heading-color);
+}
+
+.resume-block-header {
+    color: var(--large-heading-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 8px;
+    font-size: clamp(20px, 2vw, 24px);
+}
+
+.resume-block-header-main {
+}
+
+.resume-subtitle {
+    font-style: italic;
+    margin-bottom: 4px;
+}

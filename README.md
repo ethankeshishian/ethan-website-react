@@ -49,3 +49,8 @@ To deploy, make sure firebase is installed with `npm install -g firebase-tools`.
 
 1. `yarn build`
 2. `firebase deploy -m "Message here"`
+
+### Troubleshooting deployment
+
+-   If the firebase-tools install fails, try to run `sudo -s` first.
+-   If the firebase deploy fails, try running `firebase logout` and then `firebase login`.

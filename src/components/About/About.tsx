@@ -4,20 +4,15 @@ import Ethan from "../../assets/Ethan3.jpg";
 import SocialMediaIcons from "../SocialMediaIcons";
 import { RootState } from "../../redux/reducers";
 import "./About.css";
-import Articles from "../Articles";
+import Resume from "../Resume";
 import { SPOTCLUB_LINK, UNICORNER_LINK } from "../../constants";
 
 function About() {
     const dispatch = useDispatch();
-    const imageLoaded = useSelector(
-        (state: RootState) => state.readyToLoad.imageLoaded
-    );
+    const imageLoaded = useSelector((state: RootState) => state.readyToLoad.imageLoaded);
     return (
         <>
-            <link
-                rel="stylesheet"
-                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-            />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
             <div className="main-container">
                 <div className="about-container">
                     <div className="image-section-container">
@@ -37,45 +32,25 @@ function About() {
                     </div>
                     <div className="text-container">
                         <div className="text-content-container">
-                            <h2
-                                className={
-                                    imageLoaded ? "title fade-1" : "title"
-                                }
-                            >
-                                Hi, I'm Ethan Keshishian
-                            </h2>
+                            <h2 className={imageLoaded ? "title fade-1" : "title"}>Hi, I'm Ethan Keshishian</h2>
                             <p className={imageLoaded ? "bio fade-2" : "bio"}>
-                                I’m currently a computer science student at
-                                UCLA. I'm working on{" "}
-                                <a
-                                    className="link-container"
-                                    href={UNICORNER_LINK}
-                                >
+                                I’m currently a computer science student at UCLA. I'm working on{" "}
+                                <a className="link-container" href={UNICORNER_LINK}>
                                     <span className="link">Unicorner</span>
                                 </a>
-                                , a newsletter that breaks down up-and-coming
-                                startups every week, and{" "}
-                                <a
-                                    className="link-container"
-                                    href={SPOTCLUB_LINK}
-                                >
+                                , a newsletter that breaks down up-and-coming startups every week, and{" "}
+                                <a className="link-container" href={SPOTCLUB_LINK}>
                                     <span className="link">SpotClub</span>
                                 </a>
                                 , a podcast building a community of innovators.
                             </p>
-                            <div
-                                className={
-                                    imageLoaded
-                                        ? "social-icons fade-3"
-                                        : "social-icons"
-                                }
-                            >
+                            <div className={imageLoaded ? "social-icons fade-3" : "social-icons"}>
                                 <SocialMediaIcons />
                             </div>
                         </div>
                     </div>
                     <div className="articles-container">
-                        <Articles />
+                        <Resume />
                     </div>
                 </div>
             </div>
