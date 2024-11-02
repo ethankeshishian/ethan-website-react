@@ -1,31 +1,26 @@
 :focus {
-    outline: none;
+  outline: none;
 }
 .app-fade {
-    animation: appfade 0.5s ease-in;
+  animation: appfade 0.5s ease-in;
 }
 @keyframes appfade {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 }
 .notReadyToLoad {
-    opacity: 0;
+  opacity: 0;
 }
 .App {
-    height: 100vh;
+  height: 100vh;
 }
 .header {
-    position: sticky;
-    top: 0;
-    z-index: 1; /* This fixes animated components overlapping header */
+  position: sticky;
+  top: 0;
+  z-index: 1; /* This fixes animated components overlapping header */
 }
 .body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    min-height: calc(100vh - var(--header-height)); /* Subtracting header */
 }
 .footer {
 }

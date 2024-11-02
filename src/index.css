@@ -1,35 +1,35 @@
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-        sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: var(--background-color);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 h2 {
-    font-size: clamp(40px, 3vw, 48px);
+  font-size: clamp(40px, 3vw, 48px);
 }
 
 h3 {
-    font-size: clamp(32px, 3vw, 40px);
-    margin-top: 24px;
-    margin-bottom: 24px;
+  font-size: clamp(32px, 3vw, 40px);
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-bottom: 32px;
 }
 h4 {
-    font-size: clamp(24px, 2.5vw, 32px);
-    margin: 0;
-    margin-bottom: 8px;
-    margin-top: 8px;
+  font-size: clamp(24px, 2.5vw, 32px);
+  margin: 0;
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 h5 {
-    font-size: clamp(20px, 2vw, 24px);
-    margin: 0;
-    margin-bottom: 4px;
-    margin-top: 4px;
+  font-size: clamp(20px, 2vw, 24px);
+  margin: 0;
+  margin-bottom: 4px;
+  margin-top: 4px;
 }

@@ -52,5 +52,6 @@ To deploy, make sure firebase is installed with `npm install -g firebase-tools`.
 
 ### Troubleshooting deployment
 
--   If the firebase-tools install fails, try to run `sudo -s` first.
--   If the firebase deploy fails, try running `firebase logout` and then `firebase login`.
+- If the firebase-tools install fails, try to run `sudo -s` first.
+- If the firebase deploy fails, try running `firebase logout` and then `firebase login`.
+- If you get an error with OpenSSL, I solved this by building with Node version 16 and deploying with version 18.

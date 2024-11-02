@@ -1,39 +1,43 @@
 :root {
-    --linkedin-color: #007bb5;
-    --github-color: #24292d;
-    --instagram-color: #f00075;
-    --twitter-color: #55acee;
-    --spotify-color: #1bd760;
-    --email-color: #555;
-    --header-height: calc(24px + 24px + 32px);
-    --border-style: 2px solid grey;
-    /* Light mode themes */
-    --small-heading-color: #666;
-    --large-heading-color: black;
-    --border-style: 2px solid grey;
-    --background-dark: black;
-    --accent-color: rgb(33, 150, 243);
-    --background-color: white;
-    --background-overlay: white;
-    --text-color: black;
-    --divider-color: rgba(0, 0, 0, 0.12);
-    --accent-color: rgb(33, 150, 243);
-    --accent-highlight: #ddf2ff;
-    --cover-background: linear-gradient(81deg, rgba(191, 191, 191, 1), rgba(255, 219, 177, 1));
+  --linkedin-color: #007bb5;
+  --github-color: #24292d;
+  --instagram-color: #f00075;
+  --twitter-color: #55acee;
+  --spotify-color: #1bd760;
+  --email-color: #555;
+  --header-height: calc(24px + 24px + 32px);
+  --border-style: 2px solid grey;
+  /* Light mode themes */
+  --small-heading-color: #666;
+  --large-heading-color: black;
+  --border-style: 2px solid grey;
+  --background-dark: black;
+  --accent-color: rgb(33, 150, 243);
+  --background-color: white;
+  --background-overlay: white;
+  --text-color: black;
+  --sub-text-color: rgba(0, 0, 0, 0.875);
+  --divider-color: rgba(0, 0, 0, 0.12);
+  --accent-color: rgb(33, 150, 243);
+  --accent-highlight: #ddf2ff;
+  --cover-background: linear-gradient(81deg, rgba(191, 191, 191, 1), rgba(255, 219, 177, 1));
+  --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
 
-    /* Other */
-    --background-dark: #101010;
+  /* Other */
+  --background-dark: #101010;
 }
 /* Dark mode themes */
 
 body.dark-mode {
-    --small-heading-color: #666;
-    --large-heading-color: white;
-    --background-color: #101010;
-    --background-overlay: #212121;
-    --text-color: white;
-    --divider-color: var(--small-heading-color);
-    --accent-color: #f85846;
-    --accent-highlight: #ffe5db;
-    --cover-background: linear-gradient(45deg, rgba(41, 41, 41, 1) 50%, rgba(71, 0, 203, 1));
+  --small-heading-color: #666;
+  --large-heading-color: white;
+  --background-color: #101010;
+  --background-overlay: #212121;
+  --text-color: white;
+  --sub-text-color: rgba(255, 255, 255, 0.875);
+  --divider-color: var(--small-heading-color);
+  --accent-color: #f85846;
+  --accent-highlight: #ffe5db;
+  --cover-background: linear-gradient(45deg, rgba(41, 41, 41, 1) 50%, rgba(71, 0, 203, 1));
+  --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12), 0px 3px 12px rgba(255, 255, 255, 0.3);
 }
