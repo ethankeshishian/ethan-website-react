@@ -17,7 +17,7 @@
   gap: 16px;
   border: 1px solid hsl(210, 23%, 95%);
   box-shadow: var(--box-shadow);
-  padding: 32px;
+  padding: clamp(16px, 4vw, 32px);
   max-width: 768px;
   display: flex;
   gap: 16px;
@@ -25,14 +25,14 @@
 
 .resume-card {
   display: flex;
-  gap: 24px;
+  gap: clamp(12px, 4vw, 24px);
 }
 
 .resume-card-image-container {
-  width: 60px;
-  height: 60px;
-  max-width: 60px;
-  max-height: 60px;
+  width: clamp(36px, 6vw, 60px);
+  height: clamp(36px, 6vw, 60px);
+  max-width: clamp(36px, 6vw, 60px);
+  max-height: clamp(36px, 6vw, 60px);
   min-width: 0px;
   min-height: 0px;
   overflow: "hidden";

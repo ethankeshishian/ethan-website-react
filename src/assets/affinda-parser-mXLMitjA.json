@@ -12,7 +12,7 @@
         "grade": null,
         "location": "Los Angeles, California",
         "dates": { "startDate": "2023-09-01", "completionDate": "2024-12-01", "isCurrent": true, "rawText": "2023 – 2024" },
-        "description": "• Activities: Teaching Assistant for Engineering Ethics and Writing \n• Coursework: Quantum Programming, Web Applications, Internet of Things, Computational Genomics, Automated Reasoning, Learning and Reasoning with Bayesian Networks",
+        "description": "• Clubs: Association for Computing Machinery member, DevX developer, exploretech.la volunteer \n• Activities: Internal Tools Developer for Daily Bruin, Founding Ambassador for SmartGateVC accelerator \n• Coursework: Programming Languages, Software Engineering, Databases, Machine Learning, Artificial Intelligence, NLP, Computer Graphics, Networking, Operating Systems, Algorithms, Computer Architecture",
         "logo": "ucla.jpeg"
       },
       {
@@ -27,7 +27,7 @@
         "grade": null,
         "location": "Los Angeles, California",
         "dates": { "startDate": "2019-09-01", "completionDate": "2023-06-01", "isCurrent": true, "rawText": "2019 – 2023" },
-        "description": "• Clubs: Association for Computing Machinery member, DevX developer, exploretech.la volunteer\n• Leadership Experience: Founding Ambassador for SmartGateVC’s Hero House accelerator\n• Relevant Coursework: Programming Languages, Software Engineering, Databases, Machine Learning, Artificial Intelligence, Natural Language Processing, Computer Graphics, Networking, Operating Systems",
+        "description": "• Clubs: Association for Computing Machinery member, DevX developer, exploretech.la volunteer\n• Leadership Experience: Founding Ambassador for SmartGateVC’s Hero House accelerator\n• Coursework: Programming Languages, Software Engineering, Databases, Machine Learning, Artificial Intelligence, NLP, Computer Graphics, Networking, Operating Systems, Algorithms, Computer Architecture",
         "logo": "ucla.jpeg"
       }
     ],
@@ -374,7 +374,7 @@
           "isCurrent": true,
           "rawText": "December 2020 – Present"
         },
-        "jobDescription": "• Curate weekly \"Startup of the Week\" newsletter, organize events and partnerships, and manage team of contributors to serve community of 7,000 subscribers. \n• Made company website to share articles and grew it to hundreds of monthly visitors. (Next.js, TypeScript) ",
+        "jobDescription": "• Founded \"Startup of the Week\" newsletter, organize partnerships, and manage contributors for 30,000 subscribers. \n• Made company website to increase readership and grew it to hundreds of monthly visitors. (Next.js, TypeScript)",
         "occupation": {
           "jobTitle": "Co-Founder and Co-CEO",
           "jobTitleNormalized": "Co-Owner",
@@ -388,8 +388,8 @@
         "organization": "Apple",
         "location": null,
         "dates": {
-          "startDate": "2024-09-20",
-          "endDate": "2024-07-01",
+          "startDate": "2024-07-01",
+          "endDate": "2024-9-20",
           "monthsInPosition": 29,
           "isCurrent": true,
           "rawText": "July 2024 – September 2024"
@@ -402,6 +402,26 @@
           "managementLevel": "Low"
         },
         "logo": "apple.jpeg"
+      },
+      {
+        "jobTitle": "Software Engineer Intern",
+        "organization": "Pirros (YC W23)",
+        "location": null,
+        "dates": {
+          "startDate": "2023-07-01",
+          "endDate": "2023-09-01",
+          "monthsInPosition": 29,
+          "isCurrent": true,
+          "rawText": "July 2023 – September 2023"
+        },
+        "jobDescription": "• As the first full-time employee, engineered core full stack features, deployed app-wide test suite, and protected against cross-site scripting to contribute to a 53% revenue increase. (EJS, Jest, C#, Express, PostgreSQL, AWS S3)",
+        "occupation": {
+          "jobTitle": "Software Engineer Intern",
+          "jobTitleNormalized": "Software Intern",
+          "classification": null,
+          "managementLevel": "Low"
+        },
+        "logo": "pirros.jpeg"
       },
       {
         "id": 36617263,
@@ -496,7 +516,7 @@
           "isCurrent": false,
           "rawText": "October 2020 – February 2021"
         },
-        "jobDescription": "• Created a full stack \"Manage Subscriptions\" page, enabling monetization for over 500 readers and writers. (Angular, Express, Firebase Realtime Database, Stripe API) ",
+        "jobDescription": "• Created a full stack Manage Subscriptions UI and backend to empower over 500 readers and writers to monetize articles. (Angular, Express, Node.js, Firebase Realtime Database, Stripe API)",
         "occupation": {
           "jobTitle": "Full Stack Web Developer Intern",
           "jobTitleNormalized": "Full Stack Web Developer",
@@ -547,6 +567,22 @@
           "rawText": "June 2021 – Present"
         },
         "projectDescription": "• Co-founded SpotClub, a community-building podcast with tens of innovators and hundreds of listeners."
+      },
+      {
+        "project": "Bites and Bytes",
+        "location": null,
+        "dates": {
+          "rawText": "Jan 2024"
+        },
+        "projectDescription": "• Made a full-stack web app to browse, search, filter, and checkout online groceries. (Angular, Django)"
+      },
+      {
+        "project": "Repository Observatory",
+        "location": null,
+        "dates": {
+          "rawText": "May 2023"
+        },
+        "projectDescription": "• Designed an interactive web app to explore public Netflix codebase commit histories. (Next.js, TypeScript)"
       },
       {
         "project": "See Space",

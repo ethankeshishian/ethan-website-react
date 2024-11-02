@@ -35,7 +35,7 @@ function About() {
               <div className="text-content-container">
                 <h2 className={imageLoaded ? "title fade-1" : "title"}>Hi, I'm Ethan Keshishian</h2>
                 <p className={imageLoaded ? "bio fade-2" : "bio"}>
-                  I’m currently a computer science student at UCLA. I'm working on{" "}
+                  I’m currently a Master's computer science student at UCLA. I'm working on{" "}
                   <a className="link-container" href={UNICORNER_LINK}>
                     <span className="link">Unicorner</span>
                   </a>
