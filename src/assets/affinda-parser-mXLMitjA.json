@@ -12,7 +12,7 @@
         "grade": null,
         "location": "Los Angeles, California",
         "dates": { "startDate": "2023-09-01", "completionDate": "2024-12-01", "isCurrent": true, "rawText": "2023 – 2024" },
-        "description": "• Clubs: Association for Computing Machinery member, DevX developer, exploretech.la volunteer \n• Activities: Internal Tools Developer for Daily Bruin, Founding Ambassador for SmartGateVC accelerator \n• Coursework: Programming Languages, Software Engineering, Databases, Machine Learning, Artificial Intelligence, NLP, Computer Graphics, Networking, Operating Systems, Algorithms, Computer Architecture",
+        "description": "• Activities: Teaching Assistant for Engineering Ethics and Writing \n• Coursework: Quantum Programming, Web Applications, Internet of Things, Computational Genomics, Automated Reasoning, Learning and Reasoning with Bayesian Networks",
         "logo": "ucla.jpeg"
       },
       {
