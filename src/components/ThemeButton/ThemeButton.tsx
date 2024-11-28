@@ -1,27 +1,25 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '../../redux/reducers';
-import { ReactComponent as MoonIcon } from '../../assets/moon.svg';
-import { ReactComponent as SunIcon } from '../../assets/sun.svg';
-import './ThemeButton.css';
-import { Switch } from 'antd';
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "../../redux/reducers";
+import { ReactComponent as MoonIcon } from "../../assets/moon.svg";
+import { ReactComponent as SunIcon } from "../../assets/sun.svg";
+import "./ThemeButton.css";
+import { Switch } from "antd";
 
 function ThemeButton() {
   const dispatch = useDispatch();
-  const isDarkMode = useSelector(
-    (state: RootState) => state.colorTheme.darkMode
-  );
+  const isDarkMode = useSelector((state: RootState) => state.colorTheme.darkMode);
   useEffect(() => {
     if (isDarkMode) {
-      document.body.classList.add('dark-mode');
-      console.log('dark');
+      document.body.classList.add("dark-mode");
+      console.log("dark");
     } else {
-      document.body.classList.remove('dark-mode');
-      console.log('light');
+      document.body.classList.remove("dark-mode");
+      console.log("light");
     }
   });
   const toggleDarkMode = () => {
-    dispatch({ type: 'TOGGLE_DARK_MODE' });
+    dispatch({ type: "TOGGLE_DARK_MODE" });
   };
 
   return (

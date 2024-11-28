@@ -10,7 +10,6 @@ function Resume() {
 
   return (
     <div className="resume-main-block">
-      <h3>Resume</h3>
       <div className="resume-cards-container">
         <h4 className="resume-section-title">Education</h4>
         {educationData.map((item) => (
@@ -32,9 +31,6 @@ function Resume() {
             </div>
           </div>
         ))}
-      </div>
-      <br />
-      <div className="resume-cards-container">
         <h4 className="resume-section-title">Work Experience</h4>
         {workData.map((item) => (
           <div className="resume-card">

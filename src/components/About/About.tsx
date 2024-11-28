@@ -33,7 +33,7 @@ function About() {
             </div>
             <div className="text-container">
               <div className="text-content-container">
-                <h2 className={imageLoaded ? "title fade-1" : "title"}>Hi, I'm Ethan Keshishian</h2>
+                <h2 className={imageLoaded ? "title fade-1" : "title"}>Hi, I'm Ethan.</h2>
                 <p className={imageLoaded ? "bio fade-2" : "bio"}>
                   I’m currently a Master's computer science student at UCLA. I'm working on{" "}
                   <a className="link-container" href={UNICORNER_LINK}>
@@ -52,7 +52,7 @@ function About() {
             </div>
           </div>
         </div>
-        <div className="articles-container">
+        <div className={imageLoaded ? "articles-container slide" : "articles-container"}>
           <Resume />
         </div>
       </div>

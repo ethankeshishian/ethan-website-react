@@ -13,14 +13,17 @@
   --border-style: 2px solid grey;
   --background-dark: black;
   --accent-color: rgb(33, 150, 243);
-  --background-color: white;
-  --background-overlay: white;
+  --background-color: hsl(32 84% 98%);
+  --background-overlay: var(--background-color);
+  --header-background: hsl(50, 10%, 90%, 50%);
+  --cover-background: linear-gradient(81deg, rgba(191, 191, 191, 1), rgba(255, 219, 177, 1));
+  --resume-background: white;
+  --title-text-color: #fcb2ac;
   --text-color: black;
   --sub-text-color: rgba(0, 0, 0, 0.875);
   --divider-color: rgba(0, 0, 0, 0.12);
   --accent-color: rgb(33, 150, 243);
   --accent-highlight: #ddf2ff;
-  --cover-background: linear-gradient(81deg, rgba(191, 191, 191, 1), rgba(255, 219, 177, 1));
   --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
 
   /* Other */
@@ -31,13 +34,17 @@
 body.dark-mode {
   --small-heading-color: #666;
   --large-heading-color: white;
-  --background-color: #101010;
-  --background-overlay: #212121;
+  --background-color: hsl(259, 15%, 12%);
+  /* --background-overlay: #212121; */
+  --background-overlay: var(--background-color);
+  --header-background: hsl(255, 50%, 50%, 25%);
+  --cover-background: linear-gradient(45deg, rgba(41, 41, 41, 1) 50%, rgba(71, 0, 203, 1));
+  --resume-background: hsl(255, 5%, 15%);
+  --title-text-color: #fcb2ac;
   --text-color: white;
   --sub-text-color: rgba(255, 255, 255, 0.875);
   --divider-color: var(--small-heading-color);
   --accent-color: #f85846;
   --accent-highlight: #ffe5db;
-  --cover-background: linear-gradient(45deg, rgba(41, 41, 41, 1) 50%, rgba(71, 0, 203, 1));
   --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12), 0px 3px 12px rgba(255, 255, 255, 0.3);
 }

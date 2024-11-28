@@ -4,23 +4,27 @@
   flex-direction: column;
   align-items: center;
   margin: 32px;
+  position: relative;
+  margin-top: -100px;
 }
 
 .resume-section-title {
   color: var(--large-heading-color);
   align-self: center;
+  padding-top: clamp(8px, 4vw, 16px);
 }
 
 .resume-cards-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
   border: 1px solid hsl(210, 23%, 95%);
   box-shadow: var(--box-shadow);
   padding: clamp(16px, 4vw, 32px);
+  padding-top: calc(clamp(16px, 4vw, 32px) - clamp(8px, 4vw, 16px));
   max-width: 768px;
   display: flex;
-  gap: 16px;
+  gap: 24px;
+  background-color: var(--resume-background);
 }
 
 .resume-card {
@@ -66,10 +70,11 @@
   flex-direction: row;
   align-items: center;
   column-gap: 8px;
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(16px, 3vw, 24px);
   font-weight: 500;
   margin-top: 0px;
   margin-bottom: 4px;
+  letter-spacing: -0.0125rem;
 }
 
 .resume-card-header-main {
@@ -79,11 +84,22 @@
   margin-bottom: 12px;
   font-weight: 300;
   color: var(--sub-text-color);
-  font-size: clamp(12px, 2vw, 14px);
+  font-size: clamp(12px, 3vw, 14px);
 }
 
 .resume-line {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   color: var(--sub-text-color);
-  font-size: clamp(12px, 2vw, 14px);
+  font-size: clamp(12px, 3vw, 16px);
+  letter-spacing: -0.0125rem;
+  font-weight: 400;
+  /* line-height: 1.125rem; */
+}
+
+/* Fixing animation when changing  width */
+@media screen and (max-width: 1054px) {
+  .resume-main-block {
+    position: unset;
+    margin-top: 32px;
+  }
 }

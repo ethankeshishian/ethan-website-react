@@ -617,6 +617,15 @@
           "rawText": "March 2020"
         },
         "projectDescription": "• Created website with Zoom API for students and professors to schedule classes during COVID-19 pandemic."
+      },
+
+      {
+        "project": "Album Getter",
+        "location": null,
+        "dates": {
+          "rawText": "October 2019"
+        },
+        "projectDescription": "• Wrote a Python script for backing up saved albums on Spotify to a .txt file using Spotify Web API."
       }
     ]
   }

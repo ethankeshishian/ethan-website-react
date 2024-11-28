@@ -16,9 +16,13 @@
   height: 100vh;
 }
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1; /* This fixes animated components overlapping header */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .body {
 }

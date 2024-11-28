@@ -11,7 +11,9 @@ code {
 }
 
 h2 {
-  font-size: clamp(40px, 3vw, 48px);
+  font-size: clamp(32px, 8vw, 84px);
+  font-weight: 900;
+  color: var(--title-text-color);
 }
 
 h3 {
@@ -21,10 +23,12 @@ h3 {
   padding-bottom: 32px;
 }
 h4 {
-  font-size: clamp(24px, 2.5vw, 32px);
+  font-size: clamp(24px, 5vw, 36px);
   margin: 0;
   margin-bottom: 8px;
   margin-top: 8px;
+  font-weight: 500;
+  letter-spacing: -0.05rem;
 }
 
 h5 {
