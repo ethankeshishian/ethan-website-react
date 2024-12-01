@@ -13,6 +13,8 @@
   --border-style: 2px solid grey;
   --background-dark: black;
   --accent-color: rgb(33, 150, 243);
+  --accent-color-light: hsla(202, 100%, 85%, 1);
+  --accent-highlight: #ddf2ff;
   --background-color: hsl(32 84% 98%);
   --background-overlay: var(--background-color);
   --header-background: hsl(50, 10%, 90%, 50%);
@@ -22,9 +24,8 @@
   --text-color: black;
   --sub-text-color: rgba(0, 0, 0, 0.875);
   --divider-color: rgba(0, 0, 0, 0.12);
-  --accent-color: rgb(33, 150, 243);
-  --accent-highlight: #ddf2ff;
   --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+  --drop-shadow: drop-shadow(0px 20px 24px rgba(149, 157, 165, 0.4));
 
   /* Other */
   --background-dark: #101010;
@@ -45,6 +46,8 @@ body.dark-mode {
   --sub-text-color: rgba(255, 255, 255, 0.875);
   --divider-color: var(--small-heading-color);
   --accent-color: #f85846;
+  --accent-color-light: hsla(350, 100%, 85%, 1);
   --accent-highlight: #ffe5db;
-  --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12), 0px 3px 12px rgba(255, 255, 255, 0.3);
+  /* --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12), 0px 3px 12px rgba(255, 255, 255, 0.3); */
+  --drop-shadow: drop-shadow(0px 3px 12px rgba(255, 255, 255, 0.2));
 }

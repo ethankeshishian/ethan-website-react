@@ -566,7 +566,9 @@
         "dates": {
           "rawText": "June 2021 – Present"
         },
-        "projectDescription": "• Co-founded SpotClub, a community-building podcast with tens of innovators and hundreds of listeners."
+        "projectDescription": "The podcast for spotlighting innovators.",
+        "logo": "spotclub.jpeg",
+        "link": "https://spotclub.live"
       },
       {
         "project": "Bites and Bytes",
@@ -574,7 +576,9 @@
         "dates": {
           "rawText": "Jan 2024"
         },
-        "projectDescription": "• Made a full-stack web app to browse, search, filter, and checkout online groceries. (Angular, Django)"
+        "projectDescription": "Browse, search, filter, and checkout online groceries.",
+        "logo": "bitesandbytes.jpeg",
+        "link": "#;"
       },
       {
         "project": "Repository Observatory",
@@ -582,7 +586,9 @@
         "dates": {
           "rawText": "May 2023"
         },
-        "projectDescription": "• Designed an interactive web app to explore public Netflix codebase commit histories. (Next.js, TypeScript)"
+        "projectDescription": "Explore public Netflix codebase commit histories.",
+        "logo": "repositoryobservatory.jpeg",
+        "link": "https://github.com/ethankeshishian/repository-search"
       },
       {
         "project": "See Space",
@@ -590,7 +596,9 @@
         "dates": {
           "rawText": "May 2021"
         },
-        "projectDescription": "• Constructed an interactive tool to search the NASA database for pictures and metadata. (Next.js, TypeScript)"
+        "projectDescription": "Search the NASA database for pictures and metadata.",
+        "logo": "seespace.jpeg",
+        "link": "https://see-space.vercel.app/"
       },
       {
         "project": "Mixr",
@@ -598,7 +606,9 @@
         "dates": {
           "rawText": "March 2021"
         },
-        "projectDescription": "• Led team of five to build a Tinder-like app for professional networking. (Cloud Firestore, React Native, Expo)\n• Awarded honorable mention for “Best use of Google Cloud” at LA Hacks 2021."
+        "projectDescription": "A Tinder-like app for professional networking.",
+        "logo": "mixr.jpeg",
+        "link": "https://devpost.com/software/mixr-5xomqh"
       },
 
       {
@@ -607,7 +617,9 @@
         "dates": {
           "rawText": "October 2020 – December 2020"
         },
-        "projectDescription": "• Contributed multiple webpages, animated buttons, and more to a web app to vote and comment on daily polls, suggest new polls, and view previous poll demographics. (React, AWS Amplify)"
+        "projectDescription": "Vote on polls and view analytics every day.",
+        "logo": "pollify.jpeg",
+        "link": "https://github.com/ethankeshishian/poll-web-app"
       },
 
       {
@@ -616,7 +628,9 @@
         "dates": {
           "rawText": "March 2020"
         },
-        "projectDescription": "• Created website with Zoom API for students and professors to schedule classes during COVID-19 pandemic."
+        "projectDescription": "Zoom class scheduler for professors and students.",
+        "logo": "zoomgroups.jpeg",
+        "link": "https://devpost.com/software/zoomgroups-8sdauk"
       },
 
       {
@@ -625,7 +639,8 @@
         "dates": {
           "rawText": "October 2019"
         },
-        "projectDescription": "• Wrote a Python script for backing up saved albums on Spotify to a .txt file using Spotify Web API."
+        "projectDescription": "Back up saved music albums to a .txt file.",
+        "logo": "albumgetter.jpeg"
       }
     ]
   }

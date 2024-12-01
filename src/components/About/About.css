@@ -151,6 +151,7 @@
   text-align: justify;
   font-weight: 300;
   font-size: 24px;
+  letter-spacing: -0.0125rem;
 }
 .articles-container {
   grid-area: articles;
