@@ -1,6 +1,7 @@
 .header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 12px;
   padding-left: clamp(16px, 5vw, 256px);
   padding-right: clamp(16px, 5vw, 256px);
