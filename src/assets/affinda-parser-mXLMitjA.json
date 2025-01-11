@@ -384,6 +384,24 @@
         "logo": "unicorner.jpeg"
       },
       {
+        "jobTitle": "Software Engineer",
+        "organization": "Mercury",
+        "location": null,
+        "dates": {
+          "startDate": "2025-1-6",
+          "isCurrent": true,
+          "rawText": "January 2025 – Present"
+        },
+        "jobDescription": "ACH+",
+        "occupation": {
+          "jobTitle": "Software Engineer",
+          "jobTitleNormalized": "Software Engineer",
+          "classification": null,
+          "managementLevel": "Low"
+        },
+        "logo": "mercury.jpeg"
+      },
+      {
         "jobTitle": "Full Stack Software Intern",
         "organization": "Apple",
         "location": null,
@@ -391,7 +409,7 @@
           "startDate": "2024-07-01",
           "endDate": "2024-9-20",
           "monthsInPosition": 29,
-          "isCurrent": true,
+          "isCurrent": false,
           "rawText": "July 2024 – September 2024"
         },
         "jobDescription": "• Contributed to cross-functional hardware/software user research portal. (Angular, TypeScript, Django) \n• Built admin onboarding experience for calendar management tool. (htmx, Alpine.js, JavaScript, Django, Python)",
@@ -569,6 +587,16 @@
         "projectDescription": "The podcast for spotlighting innovators.",
         "logo": "spotclub.jpeg",
         "link": "https://spotclub.live"
+      },
+      {
+        "project": "Setup My Mac",
+        "location": null,
+        "dates": {
+          "rawText": "July 2024"
+        },
+        "projectDescription": "Set up a new Mac with my personalized configuration.",
+        "logo": "setupmymac.jpeg",
+        "link": "https://github.com/ethankeshishian/setup-my-mac"
       },
       {
         "project": "Bites and Bytes",
