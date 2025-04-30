@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   column-gap: clamp(12px, 6vw, 48px);
   row-gap: 0.4em;
+  align-items: center;
 }
 .header-link {
   margin-bottom: 0px;

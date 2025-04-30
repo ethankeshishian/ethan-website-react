@@ -6,6 +6,7 @@ import { RootState } from "../../redux/reducers";
 import "./About.css";
 import Resume from "../Resume";
 import { SPOTCLUB_LINK, UNICORNER_LINK } from "../../constants";
+import SquircleImage from "../SquircleImage"
 
 function About() {
   const dispatch = useDispatch();
@@ -18,15 +19,12 @@ function About() {
           <div className="about-container">
             <div className="image-section-container">
               <div className="image-container">
-                <img
-                  className="image"
+                <SquircleImage
                   src={Ethan}
                   alt="Ethan Keshishian"
+                  //className="image"
                   onLoad={() =>
-                    dispatch({
-                      type: "EDIT_IMAGE_LOADED",
-                      payload: true,
-                    })
+                    dispatch({ type: "EDIT_IMAGE_LOADED", payload: true })
                   }
                 />
               </div>
