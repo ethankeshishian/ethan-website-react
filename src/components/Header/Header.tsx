@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import HeaderLinks from "../HeaderLinks";
+import Squircle from "../Squircle";
 
 import Divider from "@material-ui/core/Divider";
 import Drawer from "@material-ui/core/Drawer";
@@ -16,6 +17,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import ThemeButton from "../ThemeButton";
 import { useHistory } from "react-router-dom";
+import { fa500px } from "@fortawesome/free-brands-svg-icons";
 
 const title = "E.H.K.";
 const links = ["About", "Schedule"];
@@ -64,7 +66,7 @@ function Header(props: any) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <div className="header-container">
+    <Squircle className="header-container">
       <a href="/" className="main-heading-link">
         <h4 className="main-heading">{title}</h4>
       </a>
@@ -92,7 +94,7 @@ function Header(props: any) {
         </Hidden>
       </IconButton>
       {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-    </div>
+    </Squircle>
   );
 }
 

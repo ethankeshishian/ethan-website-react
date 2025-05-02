@@ -9,7 +9,7 @@ export default function SquircleImage({
   cornerRadius = 100,
   borderWidth = 6,
   ...rest
-}:any) {
+}: any) {
 
   // preload the image so we can fire onLoad
   useEffect(() => {
@@ -24,8 +24,8 @@ export default function SquircleImage({
       as="div"
       cornerRadius={cornerRadius}
       borderWidth={borderWidth}
-      className={`squircle-wrapper ${className}`}
-      style={{ '--image-url': `url(${src})`}}
+      className={`squircle-image-wrapper ${className}`}
+      style={{ '--image-url': `url(${src})` }}
       {...rest}
     />
   );

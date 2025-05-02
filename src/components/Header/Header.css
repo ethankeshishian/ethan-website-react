@@ -9,7 +9,6 @@
   margin: 24px clamp(16px, 15vw, 256px);
   backdrop-filter: blur(10px) saturate(1.7);
   background-color: var(--header-background);
-  border-radius: 50px;
 }
 .links-container {
   display: flex;

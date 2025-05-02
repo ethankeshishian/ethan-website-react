@@ -91,13 +91,17 @@
   font-size: clamp(12px, 3vw, 14px);
 }
 
-.resume-line {
+.resume-line, .project-line {
   margin-bottom: 4px;
   color: var(--sub-text-color);
   font-size: clamp(12px, 3vw, 16px);
   letter-spacing: -0.025rem;
   font-weight: 400;
   /* line-height: 1.125rem; */
+}
+
+.project-line {
+  font-size: clamp(12px, 3vw, 18px);
 }
 
 .project-section-title {
@@ -113,29 +117,31 @@
   font-style: italic;
   transform: scale(2, 1);
 }
-
 .project-cards-container {
   max-width: min(1600px, 100%);
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(384px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(512px, 1fr));
   gap: 24px;
+}
+.project-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  filter: var(--drop-shadow-xs);
+  transition: 0.4s;
+}
+.project-card-wrapper:hover {
+  transform: translateY(-12px);
+  filter: var(--drop-shadow-s);
 }
 .project-card {
   padding: clamp(32px, 4vw, 64px);
   background-color: var(--resume-background);
-  transition: 0.4s;
   display: flex;
   justify-content: space-between;
   gap: clamp(32px, 4vw, 64px);
-  border: 1px solid hsl(210, 23%, 95%);
-  box-shadow: var(--box-shadow);
   align-items: center;
   cursor: pointer;
-}
-
-.project-card:hover {
-  transform: translateY(-12px);
-  filter: var(--drop-shadow);
+  flex: 1;
 }
 
 .project-card-image-container {

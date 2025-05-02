@@ -1,6 +1,7 @@
 import React from "react";
 import "./Resume.css";
 import ResumeJSON from "../../assets/affinda-parser-mXLMitjA.json";
+import Squircle from "../Squircle"
 
 function Resume() {
   let resumeData = ResumeJSON.data;
@@ -55,20 +56,22 @@ function Resume() {
       <h4 className="project-section-title">Projects</h4>
       <div className="project-cards-container">
         {projectData.map((item) => (
-          <a className="project-card" href={item.link}>
-            <div>
-              <h5 className="project-card-header">{item.project}</h5>
-              <div className="project-subtitle">{item.dates.rawText}</div>
+          <span className="project-card-wrapper">
+            <Squircle className="project-card" href={item.link} as="a" cornerRadius={40}>
               <div>
-                {item.projectDescription.split("\n").map((line) => (
-                  <div className="resume-line">{line}</div>
-                ))}
+                <h5 className="project-card-header">{item.project}</h5>
+                <div className="project-subtitle">{item.dates.rawText}</div>
+                <div>
+                  {item.projectDescription.split("\n").map((line) => (
+                    <div className="project-line">{line}</div>
+                  ))}
+                </div>
               </div>
-            </div>
-            <div className="project-card-image-container">
-              <img className="project-card-image" src={require("../../assets/logos/" + item.logo).default} alt={item.logo} />
-            </div>
-          </a>
+              <div className="project-card-image-container">
+                <img className="project-card-image" src={require("../../assets/logos/" + item.logo).default} alt={item.logo} />
+              </div>
+            </Squircle>
+          </span>
         ))}
       </div>
     </div>

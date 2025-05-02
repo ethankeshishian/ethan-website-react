@@ -1,4 +1,4 @@
-.squircle-wrapper {
+.squircle-image-wrapper {
   background-color: white;
 
   display: inline-block;
@@ -7,7 +7,7 @@
   aspect-ratio: inherit;
 }
 
-.squircle-wrapper::before {
+.squircle-image-wrapper::before {
   background-image: var(--image-url);
   background-size: cover;
   background-position: center;
