@@ -115,7 +115,7 @@ body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--background-color);
+  background: var(--background);
 }
 
 /* Important overrides antd styles */

@@ -14,18 +14,23 @@
   padding-top: clamp(8px, 4vw, 16px);
 }
 
+.resume-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  filter: var(--drop-shadow-s);
+  backdrop-filter: var(--resume-backdrop-filter);
+}
 .resume-cards-container {
   display: flex;
   flex-direction: column;
-  border: 1px solid hsl(210, 23%, 95%);
-  box-shadow: var(--box-shadow);
   padding: clamp(16px, 4vw, 32px);
   padding-top: calc(clamp(16px, 4vw, 32px) - clamp(8px, 4vw, 16px));
   max-width: 1024px;
-  display: flex;
   gap: 24px;
-  background-color: var(--resume-background);
   box-sizing: border-box;
+}
+.resume-cards-container::before {
+  background-color: var(--resume-background);
 }
 
 .resume-card {
@@ -138,7 +143,7 @@
   background-color: var(--resume-background);
   display: flex;
   justify-content: space-between;
-  gap: clamp(32px, 4vw, 64px);
+  gap: clamp(32px, 4vw, 48px);
   align-items: center;
   cursor: pointer;
   flex: 1;
