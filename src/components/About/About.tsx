@@ -18,7 +18,7 @@ function About() {
       <div className="main-container">
         <div className="hero-container">
           <span className="about-container-wrapper">
-            <Squircle className="about-container" cornerRadius={8} borderWidth={1}>
+            <Squircle className="about-container" cornerRadius={16} borderWidth={1}>
               <div className="image-section-container">
                 <div className="image-container">
                   <SquircleImage

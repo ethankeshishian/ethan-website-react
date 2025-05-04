@@ -59,10 +59,9 @@
   --sub-text-color: rgba(0, 0, 0, 0.875);
   --divider-color: rgba(0, 0, 0, 0.12);
   --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
-  --drop-shadow-xs: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.12))
-    drop-shadow(0 1px 2px rgba(0, 0, 0, 0.24));
-  --drop-shadow-s: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.15))
-    drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12));
+  --drop-shadow-xxs: drop-shadow(0 4px 3px rgba(0, 0, 0, .03)) drop-shadow(0 4px 2px rgba(0, 0, 0, 0.06));
+  --drop-shadow-xs: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.12)) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.24));
+  --drop-shadow-s: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.15)) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12));
   --drop-shadow-l: drop-shadow(0 15px 25px rgba(0, 0, 0, .15)) drop-shadow(0 5px 10px rgba(0, 0, 0, .05));
 
   /* Other */
@@ -107,8 +106,4 @@ body.dark-mode {
   --accent-color: #f85846;
   --accent-color-light: hsla(350, 100%, 85%, 1);
   --accent-highlight: #ffe5db;
-  --drop-shadow-xs: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.12))
-    drop-shadow(0 1px 2px rgba(0, 0, 0, 0.24));
-  --drop-shadow-s: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.15))
-    drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12));
 }
