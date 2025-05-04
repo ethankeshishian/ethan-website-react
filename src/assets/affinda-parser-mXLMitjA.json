@@ -12,7 +12,7 @@
         "grade": null,
         "location": "Los Angeles, California",
         "dates": { "startDate": "2023-09-01", "completionDate": "2024-12-01", "isCurrent": true, "rawText": "2023 – 2024" },
-        "description": "• Activities: Teaching Assistant for Engineering Ethics and Writing \n• Coursework: Quantum Programming, Web Applications, Internet of Things, Computational Genomics, Automated Reasoning, Learning and Reasoning with Bayesian Networks",
+        "description": "Activities: Teaching Assistant for Engineering Ethics and Writing \nCoursework: Quantum Programming, Web Applications, Internet of Things, Computational Genomics, Automated Reasoning, Learning and Reasoning with Bayesian Networks",
         "logo": "ucla.jpeg"
       },
       {
@@ -27,7 +27,7 @@
         "grade": null,
         "location": "Los Angeles, California",
         "dates": { "startDate": "2019-09-01", "completionDate": "2023-06-01", "isCurrent": true, "rawText": "2019 – 2023" },
-        "description": "• Clubs: Association for Computing Machinery member, DevX developer, exploretech.la volunteer\n• Leadership Experience: Founding Ambassador for SmartGateVC’s Hero House accelerator\n• Coursework: Programming Languages, Software Engineering, Databases, Machine Learning, Artificial Intelligence, NLP, Computer Graphics, Networking, Operating Systems, Algorithms, Computer Architecture",
+        "description": "Clubs: Association for Computing Machinery member, DevX developer, exploretech.la volunteer\nLeadership Experience: Founding Ambassador for SmartGateVC’s Hero House accelerator\nCoursework: Programming Languages, Software Engineering, Databases, Machine Learning, Artificial Intelligence, NLP, Computer Graphics, Networking, Operating Systems, Algorithms, Computer Architecture",
         "logo": "ucla.jpeg"
       }
     ],
@@ -374,7 +374,7 @@
           "isCurrent": true,
           "rawText": "December 2020 – Present"
         },
-        "jobDescription": "• Founded \"Startup of the Week\" newsletter, organize partnerships, and manage contributors for 30,000 subscribers. \n• Made company website to increase readership and grew it to hundreds of monthly visitors. (Next.js, TypeScript)",
+        "jobDescription": "Founded \"Startup of the Week\" newsletter, organize partnerships, and manage contributors for 30,000 subscribers. \nMade company website to increase readership and grew it to hundreds of monthly visitors. (Next.js, TypeScript)",
         "occupation": {
           "jobTitle": "Co-Founder and Co-CEO",
           "jobTitleNormalized": "Co-Owner",
@@ -412,7 +412,7 @@
           "isCurrent": false,
           "rawText": "July 2024 – September 2024"
         },
-        "jobDescription": "• Contributed to cross-functional hardware/software user research portal. (Angular, TypeScript, Django) \n• Built admin onboarding experience for calendar management tool. (htmx, Alpine.js, JavaScript, Django, Python)",
+        "jobDescription": "Contributed to cross-functional hardware/software user research portal. (Angular, TypeScript, Django) \nBuilt admin onboarding experience for calendar management tool. (htmx, Alpine.js, JavaScript, Django, Python)",
         "occupation": {
           "jobTitle": "Full Stack Software Intern",
           "jobTitleNormalized": "Software Intern",
@@ -432,7 +432,7 @@
           "isCurrent": true,
           "rawText": "July 2023 – September 2023"
         },
-        "jobDescription": "• As the first full-time employee, engineered core full stack features, deployed app-wide test suite, and protected against cross-site scripting to contribute to a 53% revenue increase. (EJS, Jest, C#, Express, PostgreSQL, AWS S3)",
+        "jobDescription": "As the first full-time employee, engineered core full stack features, deployed app-wide test suite, and protected against cross-site scripting to contribute to a 53% revenue increase. (EJS, Jest, C#, Express, PostgreSQL, AWS S3)",
         "occupation": {
           "jobTitle": "Software Engineer Intern",
           "jobTitleNormalized": "Software Intern",
@@ -453,7 +453,7 @@
           "isCurrent": false,
           "rawText": "June 2022 – August 2022"
         },
-        "jobDescription": "• Implemented a multiple-page micro-frontend dashboard and connected it to a RESTful API to facilitate maintenance ofloan extension eligibility rules for one million customers. (LitElement, webpack, TypeScript) \n• Shadowed five machine learning engineers across four teams. (Python, internal libraries) ",
+        "jobDescription": "Implemented a multiple-page micro-frontend dashboard and connected it to a RESTful API to facilitate maintenance ofloan extension eligibility rules for one million customers. (LitElement, webpack, TypeScript) \nShadowed five machine learning engineers across four teams. (Python, internal libraries) ",
         "occupation": {
           "jobTitle": "Software Engineer Intern",
           "jobTitleNormalized": "Software Intern",
@@ -480,7 +480,7 @@
           "isCurrent": false,
           "rawText": "September 2020 – June 2022"
         },
-        "jobDescription": "• Built multiple internal tools such as Gallery Maker, which enables hundreds of staffers to upload, rearrange, and caption images to design photo galleries for main news site. (Python, Django, TypeScript, React, Redux) ",
+        "jobDescription": "Built multiple internal tools such as Gallery Maker, which enables hundreds of staffers to upload, rearrange, and caption images to design photo galleries for main news site. (Python, Django, TypeScript, React, Redux) ",
         "occupation": {
           "jobTitle": "Internal Tools Developer",
           "jobTitleNormalized": "Tools Developer",
@@ -507,7 +507,7 @@
           "isCurrent": false,
           "rawText": "June 2021 – August 2021"
         },
-        "jobDescription": "• Provided hands-on guidance and coding assistance to four beginner CS students as they developed personal websites from scratch. (HTML, CSS, JavaScript, React) ",
+        "jobDescription": "Provided hands-on guidance and coding assistance to four beginner CS students as they developed personal websites from scratch. (HTML, CSS, JavaScript, React) ",
         "occupation": {
           "jobTitle": "Volunteer Project Mentor",
           "jobTitleNormalized": "Volunteer Mentor",
@@ -534,7 +534,7 @@
           "isCurrent": false,
           "rawText": "October 2020 – February 2021"
         },
-        "jobDescription": "• Created a full stack Manage Subscriptions UI and backend to empower over 500 readers and writers to monetize articles. (Angular, Express, Node.js, Firebase Realtime Database, Stripe API)",
+        "jobDescription": "Created a full stack Manage Subscriptions UI and backend to empower over 500 readers and writers to monetize articles. (Angular, Express, Node.js, Firebase Realtime Database, Stripe API)",
         "occupation": {
           "jobTitle": "Full Stack Web Developer Intern",
           "jobTitleNormalized": "Full Stack Web Developer",
@@ -561,7 +561,7 @@
           "isCurrent": false,
           "rawText": "July 2020 – October 2020"
         },
-        "jobDescription": "• Designed, developed, and deployed a core feature and app tab to more than 100 daily active iOS/Android users. (TypeScript, React Native) \n• Spearheaded an update to the app splash screen and app icon. (Java, TypeScript, React Native) ",
+        "jobDescription": "Designed, developed, and deployed a core feature and app tab to more than 100 daily active iOS/Android users. (TypeScript, React Native) \nSpearheaded an update to the app splash screen and app icon. (Java, TypeScript, React Native) ",
         "occupation": {
           "jobTitle": "Mobile App Developer Intern",
           "jobTitleNormalized": "Mobile Developer",

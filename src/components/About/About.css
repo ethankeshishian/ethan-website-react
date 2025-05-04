@@ -5,29 +5,41 @@
   align-items: center;
   background: var(--background);
   background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
 }
+
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .hero-container {
   width: 100%;
-  background-image: url("../../assets/patterns/graphy.png"), var(--cover-background);
+  background: var(--cover-background);
   min-height: calc(100vh);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 32px;
   box-sizing: border-box;
+  background-size: 400% 400%;
+  animation: var(--cover-animation);
+}
+
+.about-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  filter: var(--drop-shadow-s);
+  backdrop-filter: var(--resume-backdrop-filter);
 }
 
 .about-container {
@@ -35,8 +47,13 @@
   grid-template-areas: "img txt" "articles articles";
   column-gap: 80px;
   row-gap: 16px;
-  width: 1600px;
+  width: auto !important;
   justify-content: center;
+  padding: 32px 64px;
+}
+
+.about-container::before {
+  background-color: var(--resume-background);
 }
 
 .image-container {
@@ -125,7 +142,7 @@
   animation-delay: 1.8s;
   animation-fill-mode: forwards;
 
-  @media screen and (max-width: 1054px) {
+  @media screen and (max-width: 1182px) {
     transform: unset;
     animation: unset;
     animation-delay: unset;
@@ -183,21 +200,18 @@
 }
 
 /* Handling narrow screens */
-/* img width + gap + txt width + scrollbar + padding*2 */
-/* 350 + 80px + 540px + 20px + 64px = 970px */
-@media screen and (max-width: 1054px) {
+/* img width + gap + txt width + scrollbar + padding*2 + arbitrary padding */
+/* 350 + 80 + 540 + 20 + 128 + 64 = 1182px */
+@media screen and (max-width: 1182px) {
   .about-container {
-    grid-template-areas: "img" "txt" "articles";
+    grid-template-areas: "img" "txt";
+    /*"articles";*/
   }
 
   .text-container {
     justify-self: center;
     width: unset;
     /* max-width: 80%; */
-  }
-
-  .about-container {
-    padding-top: unset;
   }
 
   .image-container,
@@ -229,9 +243,21 @@
   .bio {
     font-size: 20px;
   }
+
+  .hero-container {
+    font-size: clamp(16px, 4vw, 32px);
+  }
+
+  .about-container {
+    padding: 16px;
+  }
 }
 
 @media screen and (max-width: 450px) {
+
+  .about-container {
+    padding: 8px;
+  }
 
   .image-container {
     width: 100%;
@@ -248,5 +274,9 @@
 
   .icon-container {
     justify-content: start;
+  }
+
+  .bio {
+    font-size: 16px;
   }
 }

@@ -102,6 +102,8 @@
   font-size: clamp(12px, 3vw, 16px);
   letter-spacing: -0.025rem;
   font-weight: 400;
+  display: flex;
+  gap: .5em;
   /* line-height: 1.125rem; */
 }
 
@@ -167,7 +169,7 @@
 }
 
 /* Fixing animation when changing  width */
-@media screen and (max-width: 1054px) {
+@media screen and (max-width: 1182px) {
   .resume-main-block {
     position: unset;
     margin-top: 32px;

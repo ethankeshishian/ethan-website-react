@@ -27,7 +27,7 @@ function Resume() {
                 </div>
                 <div>
                   {item.description.split("\n").map((line) => (
-                    <div className="resume-line">{line}</div>
+                    <div className="resume-line"><span>{" • "}</span><span>{line}</span></div>
                   ))}
                 </div>
               </div>
@@ -46,7 +46,7 @@ function Resume() {
                 </div>
                 <div>
                   {item.jobDescription.split("\n").map((line) => (
-                    <div className="resume-line">{line}</div>
+                    <div className="resume-line"><span>{" • "}</span> <span>{line}</span></div>
                   ))}
                 </div>
               </div>

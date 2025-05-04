@@ -18,54 +18,86 @@
   --background-color: hsl(32 84% 98%);
   --background-overlay: var(--background-color);
   --header-background: hsl(50, 10%, 90%, 50%);
-  --cover-background: linear-gradient(81deg, rgba(191, 191, 191, 1), rgba(255, 219, 177, 1));
-  --resume-background: white;
+  --cover-background:
+    linear-gradient(30deg,
+      hsl(178.04, 100%, 81.96%) 0%,
+      hsl(178.85, 97.22%, 81.6%) 4.2%,
+      hsl(181.2, 93.43%, 80.94%) 8%,
+      hsl(184.79, 93.16%, 80.43%) 11.55%,
+      hsl(189.32, 92.83%, 79.77%) 14.8%,
+      hsl(194.5, 92.48%, 78.98%) 17.85%,
+      hsl(200.08, 92.13%, 78.08%) 20.75%,
+      hsl(205.88, 91.79%, 77.11%) 23.6%,
+      hsl(211.72, 91.49%, 76.08%) 26.4%,
+      hsl(217.45, 91.22%, 75.05%) 29.25%,
+      hsl(222.96, 91%, 74.03%) 32.15%,
+      hsl(228.1, 90.83%, 73.08%) 35.2%,
+      hsl(232.69, 90.7%, 72.25%) 38.45%,
+      hsl(236.46, 90.61%, 71.58%) 42%,
+      hsl(239.05, 90.56%, 71.14%) 45.8%,
+      hsl(240, 90.21%, 71.96%) 50%,
+      hsl(240.53, 90.31%, 72.04%) 56.3%,
+      hsl(242.01, 90.59%, 72.28%) 61.65%,
+      hsl(244.2, 91.02%, 72.64%) 66.15%,
+      hsl(246.91, 91.61%, 73.1%) 69.95%,
+      hsl(249.94, 92.32%, 73.63%) 73.2%,
+      hsl(253.15, 93.14%, 74.21%) 75.95%,
+      hsl(256.42, 94.05%, 74.81%) 78.4%,
+      hsl(259.63, 95.01%, 75.41%) 80.6%,
+      hsl(262.69, 96.01%, 76%) 82.7%,
+      hsl(265.53, 97%, 76.55%) 84.8%,
+      hsl(268.05, 97.93%, 77.03%) 87.1%,
+      hsl(270.17, 98.75%, 77.45%) 89.6%,
+      hsl(271.8, 99.41%, 77.76%) 92.55%,
+      hsl(272.84, 99.84%, 77.97%) 95.95%,
+      hsl(273.21, 100%, 78.04%) 100%);
+  --cover-animation: gradient 15s ease infinite;
+  --resume-background: rgba(255, 255, 255, .75);
   --resume-backdrop-filter: blur(30px);
   --title-text-color: #fcb2ac;
   --text-color: black;
   --sub-text-color: rgba(0, 0, 0, 0.875);
   --divider-color: rgba(0, 0, 0, 0.12);
   --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
-  --drop-shadow-xs: 
-    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.12))   /* ambient */
-    drop-shadow(0 1px 2px rgba(0, 0, 0, 0.24));   /* direct/key */
-  --drop-shadow-s: 
-    drop-shadow(0 3px 6px rgba(0, 0, 0, 0.15))  /* ambient */
-    drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12)); /* direct/key */
-  --drop-shadow-l: 
-    drop-shadow(0 15px 25px rgba(0, 0, 0, .15))
-    drop-shadow(0 5px 10px rgba(0, 0, 0, .05));
+  --drop-shadow-xs: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.12))
+    drop-shadow(0 1px 2px rgba(0, 0, 0, 0.24));
+  --drop-shadow-s: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.15))
+    drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12));
+  --drop-shadow-l: drop-shadow(0 15px 25px rgba(0, 0, 0, .15)) drop-shadow(0 5px 10px rgba(0, 0, 0, .05));
 
   /* Other */
   --background-dark: #101010;
 }
+
 /* Dark mode themes */
 
 body.dark-mode {
   --small-heading-color: #666;
   --large-heading-color: white;
   --background-color: hsl(259, 15%, 12%);
-  --background: linear-gradient(
-    to top right,
-    hsl(276.47, 100%, 10%) 0%,
-    hsl(274.85, 89.51%, 10.55%) 11%,
-    hsl(272.61, 80.5%, 11.08%) 20.1%,
-    hsl(269.74, 72.7%, 11.58%) 27.7%,
-    hsl(266.17, 65.93%, 12.05%) 34%,
-    hsl(261.87, 60.05%, 12.5%) 39.3%,
-    hsl(256.79, 54.94%, 12.91%) 43.8%,
-    hsl(250.9, 50.5%, 13.29%) 48%,
-    hsl(244.17, 46.68%, 13.64%) 52%,
-    hsl(236.81, 46.99%, 13.61%) 56.2%,
-    hsl(230.23, 52.73%, 13.09%) 60.7%,
-    hsl(224.66, 59.42%, 12.55%) 66%,
-    hsl(220, 67.22%, 11.96%) 72.3%,
-    hsl(216.16, 76.37%, 11.34%) 79.9%,
-    hsl(213.04, 87.16%, 10.69%) 89%,
-    hsl(210.59, 100%, 10%) 100%
-  );
+  /* --background-overlay: #212121; */
+  --background-overlay: var(--background-color);
+  --header-background: hsl(255, 10%, 50%, 25%);
+  --background: linear-gradient(to top right,
+      hsl(276.47, 100%, 10%) 0%,
+      hsl(274.85, 89.51%, 10.55%) 11%,
+      hsl(272.61, 80.5%, 11.08%) 20.1%,
+      hsl(269.74, 72.7%, 11.58%) 27.7%,
+      hsl(266.17, 65.93%, 12.05%) 34%,
+      hsl(261.87, 60.05%, 12.5%) 39.3%,
+      hsl(256.79, 54.94%, 12.91%) 43.8%,
+      hsl(250.9, 50.5%, 13.29%) 48%,
+      hsl(244.17, 46.68%, 13.64%) 52%,
+      hsl(236.81, 46.99%, 13.61%) 56.2%,
+      hsl(230.23, 52.73%, 13.09%) 60.7%,
+      hsl(224.66, 59.42%, 12.55%) 66%,
+      hsl(220, 67.22%, 11.96%) 72.3%,
+      hsl(216.16, 76.37%, 11.34%) 79.9%,
+      hsl(213.04, 87.16%, 10.69%) 89%,
+      hsl(210.59, 100%, 10%) 100%);
   /*--header-background: hsl(255, 50%, 50%, 25%);*/
-  --cover-background: linear-gradient(45deg, rgba(41, 41, 41, 1) 50%, rgba(71, 0, 203, 1));
+  --cover-background: linear-gradient(45deg, rgba(41, 41, 41, 1) 20%, rgba(71, 0, 203, 1));
+  --cover-animation: none;
   --resume-background: hsl(255, 5%, 55%, .25);
   /*--resume-background: hsla(268, 100%, 20%, .25);*/
   --title-text-color: #fcb2ac;
@@ -75,10 +107,8 @@ body.dark-mode {
   --accent-color: #f85846;
   --accent-color-light: hsla(350, 100%, 85%, 1);
   --accent-highlight: #ffe5db;
-  --drop-shadow-xs: 
-    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.12))   /* ambient */
-    drop-shadow(0 1px 2px rgba(0, 0, 0, 0.24));   /* direct/key */
-  --drop-shadow-s: 
-    drop-shadow(0 3px 6px rgba(0, 0, 0, 0.15))  /* ambient */
-    drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12)); /* direct/key */
+  --drop-shadow-xs: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.12))
+    drop-shadow(0 1px 2px rgba(0, 0, 0, 0.24));
+  --drop-shadow-s: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.15))
+    drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12));
 }
