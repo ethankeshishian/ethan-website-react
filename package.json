@@ -43,9 +43,9 @@
         "extends": "react-app"
     },
     "browserslist": [
-       ">0.2%",
-      "not dead",
-      "not op_mini all"
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
     ],
     "devDependencies": {
         "@types/react": "^16.9.44",

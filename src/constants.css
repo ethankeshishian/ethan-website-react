@@ -18,6 +18,7 @@
   --background-color: hsl(32 84% 98%);
   --background-overlay: var(--background-color);
   --header-background: hsl(50, 10%, 90%, 50%);
+  --background: var(--background-color);
   --cover-background:
     linear-gradient(30deg,
       hsl(178.04, 100%, 81.96%) 0%,
@@ -106,4 +107,14 @@ body.dark-mode {
   --accent-color: #f85846;
   --accent-color-light: hsla(350, 100%, 85%, 1);
   --accent-highlight: #ffe5db;
+}
+
+/*This exists because of a problem with Webkit (all iOS browsers, desktop Safari). */
+/*The bug is white lines on light sections with drop-shadows and opacity != 1. */
+/*The bug still exists on iOS, but almost unnoticable with this change. */
+/* There is also a known bug in Firefox with using clip-path with backdrop-filter. */
+@supports (-webkit-backdrop-filter: blur(0)) {
+  :root {
+    --resume-background: #fff;
+  }
 }
