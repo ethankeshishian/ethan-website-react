@@ -143,6 +143,13 @@
   animation-fill-mode: forwards;
 }
 
+.fade-4 {
+  opacity: 0;
+  animation: fade 0.8s, translate 0.8s cubic-bezier(0.07, 0.89, 0.79, 0.95);
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+}
+
 /* Resume animation only on wide devices */
 .slide {
   transform: translateY(132px);
@@ -192,6 +199,15 @@
 .title {
   color: var(--large-heading-color);
   margin: 0;
+  line-height: 1.05;
+}
+
+.tagline {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: clamp(18px, 2.6vw, 28px);
+  letter-spacing: -0.0125rem;
+  margin: 6px 0 16px;
 }
 
 .bio {

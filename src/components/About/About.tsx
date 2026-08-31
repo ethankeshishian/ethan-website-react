@@ -5,7 +5,7 @@ import SocialMediaIcons from "../SocialMediaIcons";
 import { RootState } from "../../redux/reducers";
 import "./About.css";
 import Resume from "../Resume";
-import { SPOTCLUB_LINK, UNICORNER_LINK } from "../../constants";
+import { UNICORNER_LINK } from "../../constants";
 import SquircleImage from "../SquircleImage"
 
 function About() {
@@ -33,18 +33,15 @@ function About() {
               <div className="text-container">
                 <div className="text-content-container">
                   <h2 className={imageLoaded ? "title fade-1" : "title"}>Hi, I'm Ethan.</h2>
-                  <p className={imageLoaded ? "bio fade-2" : "bio"}>
-                    I’m a software engineer at Mercury, and a recent UCLA master's graduate. I'm working on{" "}
+                  <p className={imageLoaded ? "tagline fade-2" : "tagline"}>I'm the Startup Storyteller.</p>
+                  <p className={imageLoaded ? "bio fade-3" : "bio"}>
+                    I’m a software engineer at Mercury, and one of the co-founders of{" "}
                     <a className="link-container" href={UNICORNER_LINK}>
                       <span className="link">Unicorner</span>
                     </a>
-                  , a newsletter that breaks down up-and-coming startups every week, and{" "}
-                    <a className="link-container" href={SPOTCLUB_LINK}>
-                      <span className="link">SpotClub</span>
-                    </a>
-                  , a podcast building a community of innovators.
+                  , the startup community telling the stories of startups and their founders. I hold an MS and BS in CS/AI from UCLA.
                 </p>
-                  <div className={imageLoaded ? "social-icons fade-3" : "social-icons"}>
+                  <div className={imageLoaded ? "social-icons fade-4" : "social-icons"}>
                     <SocialMediaIcons />
                   </div>
                 </div>

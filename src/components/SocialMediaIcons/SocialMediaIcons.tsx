@@ -6,7 +6,7 @@ import {
   faLinkedin,
   faGithub,
   faInstagram,
-  faTwitter,
+  faXTwitter,
   faSpotify,
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -50,6 +50,19 @@ function SocialMediaIcons() {
         </div>
       </a>
       <a
+        href={TWITTER_LINK}
+        onClick={() => handleClick(linkType.Twitter)}
+        onMouseDown={(event) => middleMouseHandler(event, linkType.Twitter)}
+        className="social-icon-link"
+      >
+        <div className="social-container x">
+          <FontAwesomeIcon
+            icon={faXTwitter}
+            className="fa-x-twitter social-icons"
+          />
+        </div>
+      </a>
+      <a
         href={GITHUB_LINK}
         onClick={() => handleClick(linkType.Github)}
         onMouseDown={(event) => middleMouseHandler(event, linkType.Github)}
@@ -60,15 +73,15 @@ function SocialMediaIcons() {
         </div>
       </a>
       <a
-        href={TWITTER_LINK}
-        onClick={() => handleClick(linkType.Twitter)}
-        onMouseDown={(event) => middleMouseHandler(event, linkType.Twitter)}
+        href={EMAIL_LINK}
+        onClick={() => handleClick(linkType.Email)}
+        onMouseDown={(event) => middleMouseHandler(event, linkType.Email)}
         className="social-icon-link"
       >
-        <div className="social-container twitter">
+        <div className="social-container envelope">
           <FontAwesomeIcon
-            icon={faTwitter}
-            className="fa-twitter social-icons"
+            icon={faEnvelope}
+            className="fa-envelope social-icons"
           />
         </div>
       </a>
@@ -95,19 +108,6 @@ function SocialMediaIcons() {
           <FontAwesomeIcon
             icon={faSpotify}
             className="fa-spotify social-icons"
-          />
-        </div>
-      </a>
-      <a
-        href={EMAIL_LINK}
-        onClick={() => handleClick(linkType.Email)}
-        onMouseDown={(event) => middleMouseHandler(event, linkType.Email)}
-        className="social-icon-link"
-      >
-        <div className="social-container envelope">
-          <FontAwesomeIcon
-            icon={faEnvelope}
-            className="fa-envelope social-icons"
           />
         </div>
       </a>

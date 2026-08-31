@@ -22,10 +22,10 @@
   font-size: 25px;
 }
 
-/* Twitter */
-.fa-twitter,
-.twitter {
-  background: var(--twitter-color);
+/* X (Twitter) */
+.fa-x-twitter,
+.x {
+  background: var(--x-color);
   color: white;
   font-size: 25px;
 }
