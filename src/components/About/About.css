@@ -40,6 +40,14 @@
   flex-direction: column;
   filter: var(--drop-shadow-s);
   backdrop-filter: var(--resume-backdrop-filter);
+  /* Rounds the backdrop-filter rectangle so it doesn't show sharp corners past
+     the card. border-radius clips backdrop-filter natively (no clip-path needed)
+     and, unlike clip-path, does NOT clip the drop-shadow above. corner-shape
+     makes it an iOS-style squircle in Chrome 139+; older browsers / Safari /
+     Firefox fall back to a plain rounded corner. Replaces the old
+     corner-smoothing <Squircle> wrapper. */
+  border-radius: 16px;
+  corner-shape: superellipse(2.2);
 }
 
 .about-container {
@@ -50,10 +58,11 @@
   width: auto !important;
   justify-content: center;
   padding: 96px 128px;
-}
-
-.about-container::before {
+  /* card tint + hairline border, was corner-smoothing's borderWidth ::before */
   background-color: var(--resume-background);
+  border: 1px solid var(--resume-background);
+  border-radius: 16px;
+  corner-shape: superellipse(2.2);
 }
 
 .image-container {

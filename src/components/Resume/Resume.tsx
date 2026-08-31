@@ -12,7 +12,7 @@ function Resume() {
   return (
     <div className="resume-main-block">
       <span className="resume-container-wrapper">
-        <Squircle className="resume-cards-container" cornerRadius={8} borderWidth={1}>
+        <div className="resume-cards-container">
           <h4 className="resume-section-title">Education</h4>
           {educationData.map((item) => (
             <div className="resume-card">
@@ -52,7 +52,7 @@ function Resume() {
               </div>
             </div>
           ))}
-        </Squircle>
+        </div>
       </span>
       <br />
       <h4 className="project-section-title">Projects</h4>

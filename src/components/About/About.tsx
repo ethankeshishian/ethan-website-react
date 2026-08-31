@@ -6,7 +6,6 @@ import { RootState } from "../../redux/reducers";
 import "./About.css";
 import Resume from "../Resume";
 import { SPOTCLUB_LINK, UNICORNER_LINK } from "../../constants";
-import Squircle from "../Squircle"
 import SquircleImage from "../SquircleImage"
 
 function About() {
@@ -18,7 +17,7 @@ function About() {
       <div className="main-container">
         <div className="hero-container">
           <span className="about-container-wrapper">
-            <Squircle className="about-container" cornerRadius={16} borderWidth={1}>
+            <div className="about-container">
               <div className="image-section-container">
                 <div className="image-container">
                   <SquircleImage
@@ -50,7 +49,7 @@ function About() {
                   </div>
                 </div>
               </div>
-            </Squircle>
+            </div>
           </span>
         </div>
         <div className={imageLoaded ? "articles-container slide" : "articles-container"}>
