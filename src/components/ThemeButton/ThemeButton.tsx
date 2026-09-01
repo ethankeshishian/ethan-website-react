@@ -36,9 +36,19 @@ export default function ThemeButton() {
       />
       <style jsx global>{`
         .theme-svg {
+          display: block;
           fill: var(--background-color);
           height: 22px;
           width: 22px;
+        }
+        /* antd v5 wraps the icons in block spans that add inline-baseline slack;
+           flex-center them so the sun/moon sit in the middle of the track. */
+        .theme-switch .ant-switch-inner-checked,
+        .theme-switch .ant-switch-inner-unchecked {
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+          height: 22px;
         }
         .theme-switch.ant-switch,
         .theme-switch.ant-switch:hover,
