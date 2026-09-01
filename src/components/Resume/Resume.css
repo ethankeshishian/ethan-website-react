@@ -133,6 +133,8 @@
 .project-card {
   padding: clamp(32px, 4vw, 64px);
   background-color: var(--resume-background);
+  color: inherit;
+  text-decoration: none;
   display: flex;
   justify-content: space-between;
   gap: clamp(32px, 4vw, 48px);

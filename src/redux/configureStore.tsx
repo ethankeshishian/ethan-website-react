@@ -10,7 +10,9 @@ declare global {
     __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose;
   }
 }
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const composeEnhancers =
+  (typeof window !== "undefined" && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) ||
+  compose;
 
 const persistConfig = {
   key: 'root',
@@ -18,7 +20,12 @@ const persistConfig = {
   storage,
 };
 
-const persistedReducer = persistReducer(persistConfig, rootReducer);
+// redux-persist@6's persistReducer types don't line up with redux@5's stricter
+// Reducer type once a key is blacklisted; the runtime behaviour is correct.
+const persistedReducer = persistReducer(
+  persistConfig,
+  rootReducer as any
+);
 
 export default () => {
   let store = createStore(persistedReducer, composeEnhancers());

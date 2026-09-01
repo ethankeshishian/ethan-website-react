@@ -1,0 +1,193 @@
+@font-face {
+  font-family: "OfficeCodePro";
+  src: url("/fonts/OfficeCodePro-Regular.woff2") format("woff2");
+  font-weight: 400; /* Regular weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OfficeCodePro";
+  src: url("/fonts/OfficeCodePro-RegularItalic.woff2") format("woff2");
+  font-weight: 400; /* Regular weight */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "OfficeCodePro";
+  src: url("/fonts/OfficeCodePro-Bold.woff2") format("woff2");
+  font-weight: 700; /* Bold weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OfficeCodePro";
+  src: url("/fonts/OfficeCodePro-BoldItalic.woff2") format("woff2");
+  font-weight: 700; /* Bold weight */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "OfficeCodePro";
+  src: url("/fonts/OfficeCodePro-Medium.woff2") format("woff2");
+  font-weight: 500; /* Medium weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OfficeCodePro";
+  src: url("/fonts/OfficeCodePro-MediumItalic.woff2") format("woff2");
+  font-weight: 500; /* Medium weight */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "OfficeCodePro";
+  src: url("/fonts/OfficeCodePro-Light.woff2") format("woff2");
+  font-weight: 300; /* Light weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OfficeCodePro";
+  src: url("/fonts/OfficeCodePro-LightItalic.woff2") format("woff2");
+  font-weight: 300; /* Light weight */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "NimbusSanL";
+  src: url("/fonts/NimbusSanL-Regu.ttf") format("truetype");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NimbusSanL";
+  src: url("/fonts/NimbusSanL-ReguItal.ttf") format("truetype");
+  font-weight: 400; /* Regular */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "NimbusSanL";
+  src: url("/fonts/NimbusSanL-Bold.ttf") format("truetype");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NimbusSanL";
+  src: url("/fonts/NimbusSanL-BoldItal.ttf") format("truetype");
+  font-weight: 700; /* Bold */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "NimbusSanL";
+  src: url("/fonts/NimbusSanL-BoldCond.ttf") format("truetype");
+  font-weight: 700; /* Bold Condensed */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NimbusSanL";
+  src: url("/fonts/NimbusSanL-BoldCondItal.ttf") format("truetype");
+  font-weight: 700; /* Bold Condensed */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "NimbusSanL";
+  src: url("/fonts/NimbusSanL-ReguCond.ttf") format("truetype");
+  font-weight: 400; /* Regular Condensed */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NimbusSanL";
+  src: url("/fonts/NimbusSanL-ReguCondItal.ttf") format("truetype");
+  font-weight: 400; /* Regular Condensed */
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--background);
+}
+
+/* Important overrides antd styles */
+::-moz-selection {
+  color: var(--accent-highlight) !important;
+  background: var(--accent-color) !important;
+}
+::selection {
+  color: var(--accent-highlight) !important;
+  background: var(--accent-color) !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+h2 {
+  font-size: clamp(32px, 8vw, 76px);
+  font-weight: 900;
+  color: var(--title-text-color);
+}
+
+h3 {
+  font-size: clamp(32px, 3vw, 40px);
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-bottom: 32px;
+}
+h4 {
+  font-size: clamp(24px, 5vw, 36px);
+  margin: 0;
+  margin-bottom: 0;
+  margin-top: 8px;
+  font-weight: 300;
+  letter-spacing: -0.1rem;
+}
+
+h5 {
+  font-size: clamp(20px, 2vw, 24px);
+  margin: 0;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+/* --- from App.css --- */
+:focus {
+  outline: none;
+}
+.app-fade {
+  animation: appfade 0.5s ease-in;
+}
+@keyframes appfade {
+  0% {
+    opacity: 0;
+  }
+}
+.notReadyToLoad {
+  opacity: 0;
+}
+.App {
+  height: 100vh;
+}
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1; /* This fixes animated components overlapping header */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body {
+}
+.footer {
+}
