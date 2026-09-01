@@ -22,7 +22,7 @@ function About() {
               <div className="image-section-container">
                 <div className="image-container">
                   <SquircleImage
-                    src={Ethan}
+                    src={Ethan.src}
                     alt="Ethan Keshishian"
                     //className="image"
                     onLoad={() =>
