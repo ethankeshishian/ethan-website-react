@@ -10,13 +10,17 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
   const imageLoaded = useSelector(
     (state: RootState) => state.readyToLoad.imageLoaded
   );
+  const darkMode = useSelector((state: RootState) => state.colorTheme.darkMode);
 
-  // Reveal the app on mount. The old CRA build gated on the profile photo's
-  // onload; under SSR the markup is already present, so a mount effect gives the
-  // same "fade in once ready" behavior on every route (About, Schedule, 404).
+  // Reveal the app on mount (was: profile-photo onload in the CRA build).
   useEffect(() => {
     dispatch({ type: "EDIT_IMAGE_LOADED", payload: true });
   }, [dispatch]);
+
+  // Keep the <body> theme class in sync with Redux.
+  useEffect(() => {
+    document.body.classList.toggle("dark-mode", darkMode);
+  }, [darkMode]);
 
   return (
     <div className={imageLoaded ? "App app-fade" : "App notReadyToLoad"}>

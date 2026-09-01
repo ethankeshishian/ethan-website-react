@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { ConfigProvider, Switch } from "antd";
 import { RootState } from "../../redux/reducers";
@@ -12,11 +11,6 @@ export default function ThemeButton() {
   const isDarkMode = useSelector(
     (state: RootState) => state.colorTheme.darkMode
   );
-
-  useEffect(() => {
-    if (isDarkMode) document.body.classList.add("dark-mode");
-    else document.body.classList.remove("dark-mode");
-  }, [isDarkMode]);
 
   return (
     <ConfigProvider
