@@ -1,47 +1,58 @@
 "use client";
-import React, { useEffect } from "react";
+
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { ConfigProvider, Switch } from "antd";
 import { RootState } from "../../redux/reducers";
 import { MoonIcon } from "../icons/MoonIcon";
 import { SunIcon } from "../icons/SunIcon";
-import "./ThemeButton.css";
-import { Switch } from "antd";
 
-function ThemeButton() {
+export default function ThemeButton() {
   const dispatch = useDispatch();
-  const isDarkMode = useSelector((state: RootState) => state.colorTheme.darkMode);
+  const isDarkMode = useSelector(
+    (state: RootState) => state.colorTheme.darkMode
+  );
+
   useEffect(() => {
-    if (isDarkMode) {
-      document.body.classList.add("dark-mode");
-      console.log("dark");
-    } else {
-      document.body.classList.remove("dark-mode");
-      console.log("light");
-    }
-  });
-  const toggleDarkMode = () => {
-    dispatch({ type: "TOGGLE_DARK_MODE" });
-  };
+    if (isDarkMode) document.body.classList.add("dark-mode");
+    else document.body.classList.remove("dark-mode");
+  }, [isDarkMode]);
 
   return (
-    <>
+    <ConfigProvider
+      theme={{
+        components: {
+          Switch: {
+            trackHeight: 22,
+            trackMinWidth: 44,
+            trackPadding: 2,
+            handleSize: 18,
+            colorPrimary: "#1890ff",
+            colorPrimaryHover: "#1890ff",
+          },
+        },
+      }}
+    >
       <Switch
         className="theme-switch"
         checked={isDarkMode}
         checkedChildren={<MoonIcon className="theme-svg" />}
         unCheckedChildren={<SunIcon className="theme-svg" />}
-        onChange={toggleDarkMode}
+        onChange={() => dispatch({ type: "TOGGLE_DARK_MODE" })}
       />
-      <style jsx>{`
-        .theme-switch {
+      <style jsx global>{`
+        .theme-svg {
+          fill: var(--background-color);
+          height: 22px;
+          width: 22px;
+        }
+        .theme-switch.ant-switch {
           background-color: var(--large-heading-color);
         }
-        .ant-switch-handle::before {
+        .theme-switch .ant-switch-handle::before {
           background-color: var(--background-color);
         }
       `}</style>
-    </>
+    </ConfigProvider>
   );
 }
-
-export default ThemeButton;

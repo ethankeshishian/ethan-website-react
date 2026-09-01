@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "../constants.css";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 import Providers from "../providers/Providers";
 import MuiProvider from "../providers/MuiProvider";
 import AppShell from "../providers/AppShell";
@@ -39,7 +40,9 @@ export default function RootLayout({
       <body>
         <Providers>
           <MuiProvider>
-            <AppShell>{children}</AppShell>
+            <AntdRegistry>
+              <AppShell>{children}</AppShell>
+            </AntdRegistry>
           </MuiProvider>
         </Providers>
       </body>
