@@ -64,7 +64,8 @@
 }
 
 .resume-card-header,
-.project-card-header {
+.project-card-header,
+.blog-card-header {
   color: var(--large-heading-color);
   display: flex;
   flex-direction: row;
@@ -78,7 +79,8 @@
 }
 
 .resume-subtitle,
-.project-subtitle {
+.project-subtitle,
+.blog-card-subtitle {
   margin-bottom: 12px;
   font-weight: 300;
   color: var(--sub-text-color);
@@ -100,7 +102,7 @@
   font-size: clamp(12px, 3vw, 18px);
 }
 
-.project-section-title {
+.blurred-section-title {
   color: var(--large-heading-color);
   align-self: center;
   padding-top: 120px;
@@ -166,7 +168,7 @@
 }
 
 @media screen and (max-width: 899px) {
-  .project-section-title {
+  .blurred-section-title {
     font-size: 64px;
     letter-spacing: -0.5rem;
     filter: blur(3px);
@@ -174,7 +176,7 @@
 }
 
 @media screen and (max-width: 599px) {
-  .project-section-title {
+  .blurred-section-title {
     font-size: 32px;
     letter-spacing: -0.2rem;
     filter: blur(2px);
