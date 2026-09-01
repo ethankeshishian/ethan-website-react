@@ -1,6 +1,5 @@
 .blog-list-page {
   padding-top: calc(var(--header-height) + 48px);
-  padding-bottom: 96px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

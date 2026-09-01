@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding-bottom: 96px;
 }
 .blog-cards-container {
   display: flex;
@@ -21,7 +22,7 @@
   filter: var(--drop-shadow-xs);
   transition: 0.4s;
   backdrop-filter: var(--resume-backdrop-filter);
-  border-radius: 8px;
+  border-radius: 40px;
   corner-shape: superellipse(2.2);
 }
 .blog-card-wrapper:hover {
@@ -35,7 +36,7 @@
   padding: clamp(32px, 4vw, 48px);
   background-color: var(--resume-background);
   border: 1px solid var(--resume-background);
-  border-radius: 8px;
+  border-radius: 40px;
   corner-shape: superellipse(2.2);
   color: inherit;
   text-decoration: none;
@@ -47,11 +48,13 @@
   color: var(--large-heading-color);
   font-size: clamp(16px, 3vw, 24px);
   font-weight: 500;
-  margin: 0 0 4px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
   letter-spacing: -0.0125rem;
 }
 .blog-card-subtitle {
-  margin: 0 0 12px;
+  margin: 0 0 10px;
   font-weight: 300;
   color: var(--sub-text-color);
   font-size: clamp(12px, 3vw, 14px);

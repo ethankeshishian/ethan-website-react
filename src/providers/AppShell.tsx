@@ -17,12 +17,14 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
     dispatch({ type: "EDIT_IMAGE_LOADED", payload: true });
   }, [dispatch]);
 
-  // Keep the theme class in sync with Redux. Also clear the pre-paint
-  // `html.theme-dark` marker (set by the layout script before hydration) so it
-  // never fights the real `body.dark-mode` state after a toggle.
+  // Keep the theme classes in sync with Redux. `html.theme-dark` (set by the
+  // pre-paint layout script) is kept in lockstep with `body.dark-mode` so the
+  // <html> canvas has a dark background too — otherwise a page taller than one
+  // viewport shows a light strip past the fold (the .App wrapper caps <body> at
+  // 100vh, so <body>'s background doesn't reach the bottom).
   useEffect(() => {
     document.body.classList.toggle("dark-mode", darkMode);
-    document.documentElement.classList.remove("theme-dark");
+    document.documentElement.classList.toggle("theme-dark", darkMode);
   }, [darkMode]);
 
   return (

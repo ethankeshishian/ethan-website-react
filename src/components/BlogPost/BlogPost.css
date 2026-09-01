@@ -2,6 +2,12 @@
   padding: calc(var(--header-height) + 48px) clamp(16px, 5vw, 64px) 96px;
   box-sizing: border-box;
   min-height: 100vh;
+  /* Paint the page background here. <body> only paints one viewport tall (the
+     .App wrapper is height:100vh), which left a seam / repeat on this long page.
+     background-attachment: fixed pins it to the viewport so it reads as one
+     continuous field for the whole scroll length. */
+  background: var(--background);
+  background-attachment: fixed;
 }
 
 /* filter (drop-shadow) and backdrop-filter split across two elements,

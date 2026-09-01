@@ -223,7 +223,8 @@ h5 {
 .blurred-section-title {
   color: var(--large-heading-color);
   align-self: center;
-  padding-top: 120px;
+  margin-top: 0;
+  padding-top: 100px;
   margin-bottom: clamp(16px, 4vw, 32px);
   font-size: 96px;
   letter-spacing: -0.75rem;

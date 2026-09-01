@@ -71,7 +71,13 @@
 
 /* Dark mode themes */
 /* `html.theme-dark` is set by the pre-paint script in layout.tsx to avoid a
-   flash before React adds `body.dark-mode`. */
+   flash before React adds `body.dark-mode`, and kept in sync by AppShell. */
+
+/* Paint the <html> canvas dark too, so a page taller than one viewport has no
+   light strip past the fold (the .App wrapper caps <body> at 100vh). */
+html.theme-dark {
+  background-color: hsl(259, 15%, 12%);
+}
 
 body.dark-mode,
 html.theme-dark body {
