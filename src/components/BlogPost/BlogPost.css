@@ -132,6 +132,19 @@
   padding: 0;
   font-size: inherit;
 }
+
+/* rehype-pretty-code dual-theme: colors ship as --shiki-light / --shiki-dark
+   custom properties on every token; pick the set that matches the active theme */
+.blog-prose pre,
+.blog-prose pre span {
+  color: var(--shiki-light);
+  background-color: var(--shiki-light-bg);
+}
+body.dark-mode .blog-prose pre,
+body.dark-mode .blog-prose pre span {
+  color: var(--shiki-dark);
+  background-color: var(--shiki-dark-bg);
+}
 .blog-prose hr {
   border: 0;
   border-top: 1px solid var(--divider-color);
