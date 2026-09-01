@@ -41,6 +41,21 @@
   text-decoration: none;
   cursor: pointer;
 }
+/* same type as .project-card-header / .project-subtitle in Resume.css, but
+   defined here so they apply on / (which never loads Resume.css) */
+.blog-card-header {
+  color: var(--large-heading-color);
+  font-size: clamp(16px, 3vw, 24px);
+  font-weight: 500;
+  margin: 0 0 4px;
+  letter-spacing: -0.0125rem;
+}
+.blog-card-subtitle {
+  margin: 0 0 12px;
+  font-weight: 300;
+  color: var(--sub-text-color);
+  font-size: clamp(12px, 3vw, 14px);
+}
 .blog-card-date {
   font-size: clamp(12px, 3vw, 14px);
   font-weight: 300;

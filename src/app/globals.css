@@ -199,3 +199,60 @@ body:not(.dark-mode) [data-theme="dark"] {
 body.dark-mode [data-theme="light"] {
   display: none;
 }
+
+/* Page shell — moved from About.css so both / and /about (and /blog) share it */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--background);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Blurred section heading — used by Resume "PROJECTS" and BlogList "BLOG".
+   Global so it applies on / (which never loads Resume.css). Moved from Resume.css. */
+.blurred-section-title {
+  color: var(--large-heading-color);
+  align-self: center;
+  padding-top: 120px;
+  margin-bottom: clamp(16px, 4vw, 32px);
+  font-size: 96px;
+  letter-spacing: -0.75rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  filter: blur(4px);
+  font-style: italic;
+  transform: scale(2, 1);
+}
+
+@media screen and (max-width: 899px) {
+  .blurred-section-title {
+    font-size: 64px;
+    letter-spacing: -0.5rem;
+    filter: blur(3px);
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .blurred-section-title {
+    font-size: 32px;
+    letter-spacing: -0.2rem;
+    filter: blur(2px);
+  }
+}

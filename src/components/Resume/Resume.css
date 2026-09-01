@@ -64,8 +64,7 @@
 }
 
 .resume-card-header,
-.project-card-header,
-.blog-card-header {
+.project-card-header {
   color: var(--large-heading-color);
   display: flex;
   flex-direction: row;
@@ -79,8 +78,7 @@
 }
 
 .resume-subtitle,
-.project-subtitle,
-.blog-card-subtitle {
+.project-subtitle {
   margin-bottom: 12px;
   font-weight: 300;
   color: var(--sub-text-color);
@@ -102,19 +100,6 @@
   font-size: clamp(12px, 3vw, 18px);
 }
 
-.blurred-section-title {
-  color: var(--large-heading-color);
-  align-self: center;
-  padding-top: 120px;
-  margin-bottom: clamp(16px, 4vw, 32px);
-  font-size: 96px;
-  letter-spacing: -0.75rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  filter: blur(4px);
-  font-style: italic;
-  transform: scale(2, 1);
-}
 .project-cards-container {
   max-width: min(1600px, 100%);
   display: grid;
@@ -167,20 +152,7 @@
   }
 }
 
-@media screen and (max-width: 899px) {
-  .blurred-section-title {
-    font-size: 64px;
-    letter-spacing: -0.5rem;
-    filter: blur(3px);
-  }
-}
-
 @media screen and (max-width: 599px) {
-  .blurred-section-title {
-    font-size: 32px;
-    letter-spacing: -0.2rem;
-    filter: blur(2px);
-  }
   .project-cards-container {
     grid-template-columns: auto;
   }
