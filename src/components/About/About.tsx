@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import Ethan from "../../assets/Ethan4.jpg";
 import SocialMediaIcons from "../SocialMediaIcons";
 import { RootState } from "../../redux/reducers";
@@ -10,7 +10,6 @@ import { UNICORNER_LINK } from "../../constants";
 import SquircleImage from "../SquircleImage"
 
 function About() {
-  const dispatch = useDispatch();
   const imageLoaded = useSelector((state: RootState) => state.readyToLoad.imageLoaded);
   return (
     <>
@@ -21,14 +20,7 @@ function About() {
             <div className="about-container">
               <div className="image-section-container">
                 <div className="image-container">
-                  <SquircleImage
-                    src={Ethan.src}
-                    alt="Ethan Keshishian"
-                    //className="image"
-                    onLoad={() =>
-                      dispatch({ type: "EDIT_IMAGE_LOADED", payload: true })
-                    }
-                  />
+                  <SquircleImage src={Ethan.src} alt="Ethan Keshishian" />
                 </div>
               </div>
               <div className="text-container">

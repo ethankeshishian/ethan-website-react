@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Squircle } from 'corner-smoothing';
 import './SquircleImage.css';
 
@@ -11,15 +11,6 @@ export default function SquircleImage({
   borderWidth = 6,
   ...rest
 }: any) {
-
-  // preload the image so we can fire onLoad
-  useEffect(() => {
-    if (!src || !onLoad) return;
-    const img = new Image();
-    img.src = src;
-    img.onload = onLoad;
-  }, [src, onLoad]);
-
   return (
     <Squircle
       as="div"
