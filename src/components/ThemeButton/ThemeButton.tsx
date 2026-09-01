@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../redux/reducers";
-import { ReactComponent as MoonIcon } from "../../assets/moon.svg";
-import { ReactComponent as SunIcon } from "../../assets/sun.svg";
+import { MoonIcon } from "../icons/MoonIcon";
+import { SunIcon } from "../icons/SunIcon";
 import "./ThemeButton.css";
 import { Switch } from "antd";
 
