@@ -22,7 +22,11 @@ import { useTheme } from "@mui/material/styles";
 import ThemeButton from "../ThemeButton";
 
 const title = "E.H.K.";
-const links = ["About", "Schedule"];
+const navItems: { label: string; href: string }[] = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Schedule", href: "/schedule" },
+];
 const drawerWidth = 240;
 const breakpoint = 800;
 
@@ -33,9 +37,9 @@ export default function Header() {
 
   const handleDrawerToggle = () => setMobileOpen((v) => !v);
 
-  const handleDrawerButtonClick = (index: number) => {
+  const handleDrawerButtonClick = (href: string) => {
     handleDrawerToggle();
-    router.push(index % 2 === 0 ? "/" : "/schedule");
+    router.push(href);
   };
 
   const drawer = (
@@ -57,16 +61,16 @@ export default function Header() {
 
       <Divider sx={{ backgroundColor: "var(--divider-color)" }} />
       <List>
-        {links.map((text, index) => (
+        {navItems.map(({ label, href }) => (
           <ListItemButton
-            key={text}
-            onClick={() => handleDrawerButtonClick(index)}
+            key={href}
+            onClick={() => handleDrawerButtonClick(href)}
           >
             <ListItemIcon sx={{ color: "var(--large-heading-color)" }}>
-              {index % 2 === 0 ? <InfoIcon /> : <CalendarTodayIcon />}
+              {label === "Schedule" ? <CalendarTodayIcon /> : <InfoIcon />}
             </ListItemIcon>
             <ListItemText
-              primary={text}
+              primary={label}
               sx={{ color: "var(--large-heading-color)" }}
             />
           </ListItemButton>

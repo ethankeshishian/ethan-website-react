@@ -7,15 +7,19 @@ import ThemeButton from "../ThemeButton";
 
 export default function HeaderLinks() {
   const pathname = usePathname();
-  const cls = (href: string) =>
-    `header-link-container${pathname === href ? " active-link" : ""}`;
+  const homeActive = pathname === "/" || pathname.startsWith("/blog");
+  const cls = (active: boolean) =>
+    `header-link-container${active ? " active-link" : ""}`;
 
   return (
     <div className="header-links-container">
-      <Link href="/" className={cls("/")}>
+      <Link href="/" className={cls(homeActive)}>
+        <h4 className="header-link">Home</h4>
+      </Link>
+      <Link href="/about" className={cls(pathname === "/about")}>
         <h4 className="header-link">About</h4>
       </Link>
-      <Link href="/schedule" className={cls("/schedule")}>
+      <Link href="/schedule" className={cls(pathname === "/schedule")}>
         <h4 className="header-link">Schedule</h4>
       </Link>
       <ThemeButton />
