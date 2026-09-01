@@ -70,8 +70,11 @@
 }
 
 /* Dark mode themes */
+/* `html.theme-dark` is set by the pre-paint script in layout.tsx to avoid a
+   flash before React adds `body.dark-mode`. */
 
-body.dark-mode {
+body.dark-mode,
+html.theme-dark body {
   --small-heading-color: #666;
   --large-heading-color: white;
   --background-color: hsl(259, 15%, 12%);
