@@ -17,7 +17,7 @@ function Resume() {
           {educationData.map((item) => (
             <div className="resume-card">
               <div className="resume-card-image-container">
-                <img className="resume-card-image" src={require("../../assets/logos/" + item.logo).default} alt={item.logo} />
+                <img className="resume-card-image" src={`/logos/${item.logo}`} alt={item.logo} />
               </div>
               <div>
                 <h5 className="resume-card-header">{item.accreditation.inputStr}</h5>
@@ -37,7 +37,7 @@ function Resume() {
           {workData.map((item) => (
             <div className="resume-card">
               <div className="resume-card-image-container">
-                <img className="resume-card-image" src={require("../../assets/logos/" + item.logo).default} alt={item.logo} />
+                <img className="resume-card-image" src={`/logos/${item.logo}`} alt={item.logo} />
               </div>
               <div>
                 <h5 className="resume-card-header">{item.jobTitle}</h5>
@@ -70,7 +70,7 @@ function Resume() {
                 </div>
               </div>
               <div className="project-card-image-container">
-                <img className="project-card-image" src={require("../../assets/logos/" + item.logo).default} alt={item.logo} />
+                <img className="project-card-image" src={`/logos/${item.logo}`} alt={item.logo} />
               </div>
             </Squircle>
           </span>
