@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "../constants.css";
 import Providers from "../providers/Providers";
+import MuiProvider from "../providers/MuiProvider";
 import AppShell from "../providers/AppShell";
 
 export const metadata: Metadata = {
@@ -37,7 +38,9 @@ export default function RootLayout({
       </head>
       <body>
         <Providers>
-          <AppShell>{children}</AppShell>
+          <MuiProvider>
+            <AppShell>{children}</AppShell>
+          </MuiProvider>
         </Providers>
       </body>
     </html>
