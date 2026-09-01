@@ -1492,3 +1492,19 @@ No gaps.
 - `formatDate` — a local helper duplicated in `BlogPost.tsx` and `BlogList.tsx` (identical impl). Acceptable (two small files); a shared `@/lib/date.ts` is a nice-to-have, not required.
 - `BioHero` default export + `index.tsx` re-export — matches how `Resume`, `Schedule`, `Header` are structured in the repo. ✓
 - Header: `navItems` array replaces `links`; `handleDrawerButtonClick(href: string)` replaces the `index` version — both call sites updated in Task 7 Step 4. ✓
+
+---
+
+## Verification Results (2026-08-31)
+
+- **Build:** `next build` clean, 14/14 static pages. Routes: `/` `/about` `/blog` (SSG), `/blog/[slug]` + `/blog/[slug]/opengraph-image` (SSG, `hello-world` only — `draft-example` excluded), `/feed.xml` `/sitemap.xml` (static), `/schedule`, `/zoom` (dynamic).
+- **curl:** sitemap = 5 `<url>` (`/`, `/about`, `/blog`, `/schedule`, `hello-world`; no draft). feed = 1 `<item>`, `Content-Type: application/rss+xml`, RFC-822 pubDate. `/blog/hello-world` HTML has `blog-prose` + `BlogPosting` JSON-LD. `/blog/draft-example` and `/blog/nope` → 404.
+- **Browser (light + dark):**
+  - `/` — BioHero + blurred `BLOG` heading + `hello-world` card, no overlap, card hover-lift, gradient bg.
+  - `/about` — BioHero + Resume with the slide-up overlap, matches live layout.
+  - `/blog` — standalone list over gradient, header cleared, `Home` nav active.
+  - `/blog/hello-world` — 768px glassy container, back link, title/subtitle/date/divider, h2/h3, list, blockquote, table, image. Code block syntax-highlights and **swaps github-light ↔ github-dark on theme toggle** (shiki `--shiki-light`/`--shiki-dark` custom props + `body.dark-mode` rules).
+  - Header nav Home/About/Schedule active states correct on every route incl. `/blog/*`.
+- **OG image:** `/blog/hello-world/opengraph-image` → 1200×630 PNG (~67 KB), purple gradient, Poppins, "ethank.tech" / title / "Ethan Keshishian · September 1, 2026". `og:image` meta auto-wired.
+- **Draft behavior:** `next dev` shows both `hello-world` + `draft-example` cards and serves `/blog/draft-example` (200). Production build 404s it and omits it from sitemap/feed/params.
+- **Lighthouse SEO:** not run locally (deferred to Vercel preview).
