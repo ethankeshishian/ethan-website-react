@@ -40,11 +40,14 @@ export default function ThemeButton() {
           height: 22px;
           width: 22px;
         }
-        .theme-switch.ant-switch {
-          background-color: var(--large-heading-color);
+        .theme-switch.ant-switch,
+        .theme-switch.ant-switch:hover,
+        .theme-switch.ant-switch-checked,
+        .theme-switch.ant-switch-checked:hover {
+          background-color: var(--large-heading-color) !important;
         }
         .theme-switch .ant-switch-handle::before {
-          background-color: var(--background-color);
+          background-color: var(--background-color) !important;
         }
       `}</style>
     </ConfigProvider>

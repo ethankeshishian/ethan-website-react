@@ -17,9 +17,12 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
     dispatch({ type: "EDIT_IMAGE_LOADED", payload: true });
   }, [dispatch]);
 
-  // Keep the <body> theme class in sync with Redux.
+  // Keep the theme class in sync with Redux. Also clear the pre-paint
+  // `html.theme-dark` marker (set by the layout script before hydration) so it
+  // never fights the real `body.dark-mode` state after a toggle.
   useEffect(() => {
     document.body.classList.toggle("dark-mode", darkMode);
+    document.documentElement.classList.remove("theme-dark");
   }, [darkMode]);
 
   return (
