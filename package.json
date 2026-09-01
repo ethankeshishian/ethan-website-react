@@ -9,47 +9,29 @@
         "@fortawesome/react-fontawesome": "^0.2.6",
         "@material-ui/core": "^4.12.1",
         "@material-ui/icons": "^4.11.2",
-        "@testing-library/jest-dom": "^4.2.4",
-        "@testing-library/react": "^9.3.2",
-        "@testing-library/user-event": "^7.1.2",
-        "@types/jest": "^24.0.0",
-        "@types/styled-jsx": "^2.2.9",
         "antd": "^4.16.7",
         "corner-smoothing": "^0.1.5",
         "firebase-tools": "^11.9.0",
         "material-ui": "^0.20.2",
         "next": "^16.3.4",
         "react": "^19.2.8",
-        "react-app-rewired": "^2.1.8",
         "react-calendly": "^2.2.1",
         "react-dom": "^19.2.8",
         "react-redux": "^7.2.4",
         "react-router-dom": "^5.2.0",
-        "react-scripts": "^4.0.3",
         "redux": "^4.1.0",
-        "redux-persist": "^6.0.0",
-        "styled-jsx": "^3.4.4",
-        "yarn": "^1.22.19"
+        "redux-persist": "^6.0.0"
     },
     "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
     },
-    "eslintConfig": {
-        "extends": "react-app"
-    },
-    "browserslist": [
-        ">0.2%",
-        "not dead",
-        "not op_mini all"
-    ],
     "devDependencies": {
         "@types/node": "^26.4.0",
         "@types/react": "^19.2.18",
         "@types/react-dom": "^19.2.5",
-        "@types/react-router-dom": "^5.1.8",
         "eslint": "^10.9.1",
         "eslint-config-next": "^16.3.4",
         "typescript": "^5.9.3"
