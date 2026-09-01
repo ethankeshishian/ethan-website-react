@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import "./Resume.css";
 import ResumeJSON from "../../assets/affinda-parser-mXLMitjA.json";

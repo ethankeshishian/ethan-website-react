@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "../constants.css";
+import Providers from "../providers/Providers";
+import AppShell from "../providers/AppShell";
 
 export const metadata: Metadata = {
   title: "Ethan Keshishian",
@@ -33,7 +35,11 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <Providers>
+          <AppShell>{children}</AppShell>
+        </Providers>
+      </body>
     </html>
   );
 }

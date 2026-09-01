@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Ethan from "../../assets/Ethan4.jpg";

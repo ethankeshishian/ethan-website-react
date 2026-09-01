@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect } from 'react';
 import { Squircle } from 'corner-smoothing';
 import './SquircleImage.css';
