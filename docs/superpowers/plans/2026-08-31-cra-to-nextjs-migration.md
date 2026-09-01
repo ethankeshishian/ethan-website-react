@@ -907,3 +907,23 @@ git add -A && git commit -m "chore: remove Firebase Hosting, Vercel is deploy ta
 
 - Tasks 1–7 (original plan): done, commits `cf20ecc`..`a2db97e`.
 - `9d5c598`: hit React 19 / MUI v4 `findDOMNode` incompatibility → plan revised to single pass.
+
+### R11 verification results (2026-09-01, local production build)
+
+Verified on `npm run build && npx next start` vs `https://ethank.tech`:
+
+- ✅ Homepage light + dark — matches prod (tagline, bio, Unicorner link, social icon order)
+- ✅ Header logo/links, active underline, hover animation
+- ✅ Resume (Education/Experience) + blurred PROJECTS heading + project cards
+- ✅ Dark-mode toggle works; Switch colors match prod (black track in light, white/`--large-heading-color` in dark) after `!important` override of antd v5 CSS-in-JS
+- ✅ No white flash on dark-mode hard reload (pre-paint `html.theme-dark` script; cleared by AppShell on toggle)
+- ✅ `/schedule` — Calendly loads via header nav and mobile drawer
+- ✅ `/zoom` — 307 redirect
+- ✅ Mobile drawer (MUI v5) — E.H.K. / About (Info) / Schedule (Calendar) / theme toggle pinned bottom; drawer nav via `router.push` closes the drawer
+- ✅ Fonts (OfficeCodePro, NimbusSanL, Poppins via next/font), squircle corners, gradient background
+- ✅ `next build` — zero errors; zero hydration warnings / console errors in prod
+
+**Deviations from the "port as-is" spec, all functionally equivalent:**
+- `imageLoaded` reveal + dark-mode body class moved from leaf components (`SquircleImage`/`ThemeButton`) into `AppShell` — leaf `useEffect`s under the deep antd/MUI provider tree + React 19 StrictMode did not fire reliably. `AppShell` (direct provider child) runs effects fine. User-visible behavior (fade-in on load, theme sync) is unchanged.
+- `react-redux` 7→9, `redux` 4→5 (required for React 19 types).
+- `next.config.ts` briefly carried `typescript.ignoreBuildErrors` during the codemod phase; removed in R9 — build is now strict.
