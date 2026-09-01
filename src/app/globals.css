@@ -191,3 +191,11 @@ h5 {
 }
 .footer {
 }
+
+/* rehype-pretty-code dual themes: show one based on body.dark-mode */
+body:not(.dark-mode) [data-theme="dark"] {
+  display: none;
+}
+body.dark-mode [data-theme="light"] {
+  display: none;
+}

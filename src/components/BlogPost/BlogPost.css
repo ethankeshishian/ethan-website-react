@@ -1,0 +1,157 @@
+.blog-page {
+  padding: calc(var(--header-height) + 48px) clamp(16px, 5vw, 64px) 96px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+/* filter (drop-shadow) and backdrop-filter split across two elements,
+   like .resume-container-wrapper / .resume-cards-container */
+.blog-container-shadow {
+  filter: var(--drop-shadow-s);
+  max-width: 768px;
+  margin: 0 auto;
+}
+.blog-container {
+  padding: clamp(16px, 4vw, 32px);
+  box-sizing: border-box;
+  background-color: var(--resume-background);
+  border: 1px solid var(--resume-background);
+  backdrop-filter: var(--resume-backdrop-filter);
+  border-radius: 8px;
+  corner-shape: superellipse(2.2);
+  color: var(--text-color);
+}
+
+.blog-back {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: clamp(12px, 3vw, 14px);
+  font-weight: 500;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.blog-back:hover {
+  text-decoration: underline;
+}
+
+.blog-title {
+  color: var(--large-heading-color);
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.0125rem;
+  margin: 0 0 8px;
+}
+.blog-post-subtitle {
+  color: var(--sub-text-color);
+  font-weight: 300;
+  font-size: clamp(16px, 3vw, 20px);
+  margin: 0 0 12px;
+}
+.blog-post-date {
+  color: var(--sub-text-color);
+  font-weight: 300;
+  font-size: clamp(12px, 3vw, 14px);
+}
+.blog-divider {
+  border: 0;
+  border-top: 1px solid var(--divider-color);
+  margin: 24px 0;
+}
+
+/* --- prose --- */
+.blog-prose p {
+  color: var(--text-color);
+  font-weight: 300;
+  font-size: clamp(15px, 2.4vw, 18px);
+  line-height: 1.7;
+  margin: 0 0 1.2em;
+}
+.blog-prose h2 {
+  color: var(--large-heading-color);
+  font-size: clamp(22px, 3.5vw, 30px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.0125rem;
+  margin: 1.8em 0 0.6em;
+}
+.blog-prose h3 {
+  color: var(--large-heading-color);
+  font-size: clamp(18px, 3vw, 24px);
+  font-weight: 600;
+  margin: 1.6em 0 0.5em;
+}
+.blog-prose h4 {
+  color: var(--large-heading-color);
+  font-size: clamp(16px, 2.5vw, 20px);
+  font-weight: 600;
+  margin: 1.4em 0 0.4em;
+}
+.blog-prose a {
+  color: var(--accent-color);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.blog-prose ul,
+.blog-prose ol {
+  margin: 0 0 1.2em;
+  padding-left: 1.4em;
+  color: var(--text-color);
+  font-weight: 300;
+  font-size: clamp(15px, 2.4vw, 18px);
+  line-height: 1.7;
+}
+.blog-prose li {
+  margin-bottom: 0.4em;
+}
+.blog-prose blockquote {
+  border-left: 3px solid var(--accent-color);
+  padding-left: 1em;
+  margin: 1.4em 0;
+  color: var(--sub-text-color);
+  font-style: italic;
+}
+.blog-prose :not(pre) > code {
+  font-family: "OfficeCodePro", ui-monospace, monospace;
+  font-size: 0.9em;
+  background: var(--divider-color);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+}
+.blog-prose pre {
+  border-radius: 8px;
+  corner-shape: superellipse(2.2);
+  padding: clamp(12px, 3vw, 20px);
+  overflow-x: auto;
+  margin: 1.4em 0;
+  font-size: clamp(12px, 2vw, 14px);
+  line-height: 1.6;
+}
+.blog-prose pre code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+}
+.blog-prose hr {
+  border: 0;
+  border-top: 1px solid var(--divider-color);
+  margin: 2em 0;
+}
+.blog-prose img,
+.blog-prose .blog-prose-img {
+  display: block;
+  border-radius: 8px;
+  corner-shape: superellipse(2.2);
+}
+.blog-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.4em 0;
+  font-size: clamp(13px, 2vw, 15px);
+}
+.blog-prose th,
+.blog-prose td {
+  border: 1px solid var(--divider-color);
+  padding: 8px 12px;
+  text-align: left;
+}
