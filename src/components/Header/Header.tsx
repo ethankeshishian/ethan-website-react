@@ -1,161 +1,133 @@
 "use client";
+
 import React from "react";
 import "./Header.css";
 import HeaderLinks from "../HeaderLinks";
 import Squircle from "../Squircle";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
-import Divider from "@material-ui/core/Divider";
-import Drawer from "@material-ui/core/Drawer";
-import Hidden from "@material-ui/core/Hidden";
-import IconButton from "@material-ui/core/IconButton";
-import InfoIcon from "@material-ui/icons/Info";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
-import MenuIcon from "@material-ui/icons/Menu";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import Box from "@mui/material/Box";
+import Divider from "@mui/material/Divider";
+import Drawer from "@mui/material/Drawer";
+import IconButton from "@mui/material/IconButton";
+import List from "@mui/material/List";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import InfoIcon from "@mui/icons-material/Info";
+import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
+import MenuIcon from "@mui/icons-material/Menu";
+import { useTheme } from "@mui/material/styles";
 import ThemeButton from "../ThemeButton";
-import { useHistory } from "react-router-dom";
-import { fa500px } from "@fortawesome/free-brands-svg-icons";
 
 const title = "E.H.K.";
 const links = ["About", "Schedule"];
+const drawerWidth = 240;
+const breakpoint = 800;
 
-function Header(props: any) {
-  const { window } = props;
-  const classes = useStyles();
+export default function Header() {
   const theme = useTheme();
+  const router = useRouter();
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const history = useHistory();
 
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
+  const handleDrawerToggle = () => setMobileOpen((v) => !v);
+
   const handleDrawerButtonClick = (index: number) => {
     handleDrawerToggle();
-    const link = index % 2 === 0 ? "/" : "/schedule";
-    history.push(link);
+    router.push(index % 2 === 0 ? "/" : "/schedule");
   };
 
   const drawer = (
     <div>
-      <div className={classes.toolbar} />
-      <div className={classes.drawerHeader}>
-        <a href="/" className="">
+      <Box
+        sx={(t) => ({
+          display: "flex",
+          alignItems: "center",
+          px: 2,
+          ...t.mixins.toolbar,
+          justifyContent: "flex-start",
+          height: "var(--header-height)",
+        })}
+      >
+        <Link href="/">
           <h4 className="main-heading">{title}</h4>
-        </a>
-      </div>
+        </Link>
+      </Box>
 
-      <Divider className={classes.divider} />
+      <Divider sx={{ backgroundColor: "var(--divider-color)" }} />
       <List>
         {links.map((text, index) => (
-          <ListItem button key={text} onClick={() => handleDrawerButtonClick(index)}>
-            <ListItemIcon className={classes.listButton}>{index % 2 === 0 ? <InfoIcon /> : <CalendarTodayIcon />}</ListItemIcon>
-            <ListItemText primary={text} className={classes.listText} />
-          </ListItem>
+          <ListItemButton
+            key={text}
+            onClick={() => handleDrawerButtonClick(index)}
+          >
+            <ListItemIcon sx={{ color: "var(--large-heading-color)" }}>
+              {index % 2 === 0 ? <InfoIcon /> : <CalendarTodayIcon />}
+            </ListItemIcon>
+            <ListItemText
+              primary={text}
+              sx={{ color: "var(--large-heading-color)" }}
+            />
+          </ListItemButton>
         ))}
       </List>
-      <Divider className={classes.divider} />
-      <div className={classes.themeButtonContainer}>
+      <Divider sx={{ backgroundColor: "var(--divider-color)" }} />
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "flex-end",
+          alignItems: "center",
+          position: "fixed",
+          bottom: 0,
+          width: drawerWidth,
+          pb: "16px",
+        }}
+      >
         <ThemeButton />
-      </div>
+      </Box>
     </div>
   );
 
-  const container = window !== undefined ? () => window().document.body : undefined;
-
   return (
     <Squircle className="header-container">
-      <a href="/" className="main-heading-link">
+      <Link href="/" className="main-heading-link">
         <h4 className="main-heading">{title}</h4>
-      </a>
+      </Link>
       <div className="links-container">
         <HeaderLinks />
       </div>
-      <IconButton color="inherit" aria-label="open drawer" onClick={handleDrawerToggle} className={classes.menuButton}>
+      <IconButton
+        color="inherit"
+        aria-label="open drawer"
+        onClick={handleDrawerToggle}
+        sx={(t) => ({
+          [t.breakpoints.up(breakpoint)]: { display: "none" },
+          color: "var(--large-heading-color)",
+          height: "22px",
+          width: "22px",
+        })}
+      >
         <MenuIcon />
-        <Hidden smUp implementation="css">
-          <Drawer
-            container={container}
-            variant="temporary"
-            anchor={theme.direction === "rtl" ? "right" : "left"}
-            open={mobileOpen}
-            onClose={handleDrawerToggle}
-            classes={{
-              paper: classes.drawerPaper,
-            }}
-            ModalProps={{
-              keepMounted: true, // Better open performance on mobile.
-            }}
-          >
-            {drawer}
-          </Drawer>
-        </Hidden>
       </IconButton>
-      {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
+      <Drawer
+        variant="temporary"
+        anchor={theme.direction === "rtl" ? "right" : "left"}
+        open={mobileOpen}
+        onClose={handleDrawerToggle}
+        ModalProps={{ keepMounted: true }}
+        slotProps={{
+          paper: {
+            sx: {
+              width: drawerWidth,
+              backgroundColor: "var(--background-overlay)",
+            },
+          },
+        }}
+      >
+        {drawer}
+      </Drawer>
     </Squircle>
   );
 }
-
-const drawerWidth = 240;
-const breakpoint = 800;
-
-const useStyles = makeStyles((theme) => ({
-  drawer: {
-    [theme.breakpoints.up(breakpoint)]: {
-      width: drawerWidth,
-      flexShrink: 0,
-    },
-  },
-  menuButton: {
-    [theme.breakpoints.up(breakpoint)]: {
-      display: "none",
-    },
-    color: `var(--large-heading-color)`,
-    height: "22px",
-    width: "22px",
-  },
-  // necessary for content to be below app bar
-  toolbar: {
-    // theme.mixins.toolbar,
-  },
-  drawerPaper: {
-    width: drawerWidth,
-    backgroundColor: `var(--background-overlay)`,
-  },
-  // from another example
-  drawerHeader: {
-    display: "flex",
-    alignItems: "center",
-    padding: theme.spacing(0, 2),
-    // necessary for content to be below app bar
-    ...theme.mixins.toolbar,
-    justifyContent: "flex-start",
-    height: `var(--header-height)`,
-  },
-
-  // mine
-  listButton: {
-    color: `var(--large-heading-color)`,
-  },
-  listText: {
-    color: `var(--large-heading-color)`,
-  },
-  divider: {
-    backgroundColor: `var(--divider-color)`,
-  },
-  themeButtonContainer: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "flex-end",
-    alignItems: "center",
-    position: "fixed",
-    bottom: "0",
-    width: drawerWidth,
-    paddingBottom: "16px",
-  },
-}));
-
-export default Header;
