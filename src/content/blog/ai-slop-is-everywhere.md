@@ -14,7 +14,7 @@ I'm convinced no matter who you are, interacting with AI-generated content is un
 
 First, you lose trust in the content you consume.
 
-When I recognize a content creator is presenting AI-generated text as their own words, I begin to doubt all of their other opinions and conclusions. Surprisingly, I don't see sarcastic comments on these piece "thanking Claude" anymore. I see comments like:
+When I recognize a content creator is presenting AI-generated text as their own words, I begin to doubt all of their other opinions and conclusions. Surprisingly, I don't see sarcastic comments on these pieces "thanking Claude" anymore. I see comments like:
 
 - "I wish I had this three months ago when I was going through *x*."
 - "This is so insightful."
