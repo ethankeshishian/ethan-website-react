@@ -1,6 +1,6 @@
 "use client";
 import { useSelector } from "react-redux";
-import Ethan from "../../assets/Ethan4.jpg";
+import Ethan from "../../assets/Ethan5.jpg";
 import SocialMediaIcons from "../SocialMediaIcons";
 import { RootState } from "../../redux/reducers";
 import { UNICORNER_LINK } from "../../constants";
