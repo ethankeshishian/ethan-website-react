@@ -1,7 +1,7 @@
 ---
 title: "AI Slop is Everywhere"
 date: 2026-09-13
-draft: true
+draft: false
 ---
 
 Given my background in machine learning and content creation, I've become quite adept at recognizing AI patterns.
