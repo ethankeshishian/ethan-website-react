@@ -1,0 +1,72 @@
+.blog-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 96px;
+}
+.blog-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: min(1024px, 100%);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 5vw, 64px);
+  box-sizing: border-box;
+  list-style: none;
+}
+.blog-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  filter: var(--drop-shadow-xs);
+  transition: 0.4s;
+  backdrop-filter: var(--resume-backdrop-filter);
+  border-radius: 40px;
+  corner-shape: superellipse(2.2);
+}
+.blog-card-wrapper:hover {
+  transform: translateY(-12px);
+  filter: var(--drop-shadow-s);
+}
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: clamp(32px, 4vw, 48px);
+  background-color: var(--resume-background);
+  border: 1px solid var(--resume-background);
+  border-radius: 40px;
+  corner-shape: superellipse(2.2);
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* same type as .project-card-header / .project-subtitle in Resume.css, but
+   defined here so they apply on / (which never loads Resume.css) */
+.blog-card-header {
+  color: var(--large-heading-color);
+  font-size: clamp(16px, 3vw, 24px);
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -0.0125rem;
+}
+.blog-card-subtitle {
+  margin: 0 0 10px;
+  font-weight: 300;
+  color: var(--sub-text-color);
+  font-size: clamp(12px, 3vw, 14px);
+}
+.blog-card-date {
+  font-size: clamp(12px, 3vw, 14px);
+  font-weight: 300;
+  color: var(--sub-text-color);
+  margin-top: 4px;
+}
+.blog-empty {
+  color: var(--sub-text-color);
+  font-weight: 300;
+  text-align: center;
+}

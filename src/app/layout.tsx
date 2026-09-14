@@ -32,6 +32,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={poppins.className}>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="Ethan Keshishian"
+          href="/feed.xml"
+        />
+      </head>
       <body>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <Providers>

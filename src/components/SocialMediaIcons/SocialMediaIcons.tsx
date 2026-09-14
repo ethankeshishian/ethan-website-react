@@ -6,17 +6,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLinkedin,
   faGithub,
-  faInstagram,
   faXTwitter,
-  faSpotify,
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import {
   LINKEDIN_LINK,
   GITHUB_LINK,
-  INSTAGRAM_LINK,
   TWITTER_LINK,
-  SPOTIFY_LINK,
   EMAIL_LINK,
 } from '../../constants';
 
@@ -49,22 +45,6 @@ function SocialMediaIcons() {
           <FontAwesomeIcon
             icon={faEnvelope}
             className="fa-envelope social-icons"
-          />
-        </div>
-      </a>
-      <a href={INSTAGRAM_LINK} className="social-icon-link">
-        <div className="social-container instagram">
-          <FontAwesomeIcon
-            icon={faInstagram}
-            className="fa-instagram social-icons"
-          />
-        </div>
-      </a>
-      <a href={SPOTIFY_LINK} className="social-icon-link">
-        <div className="social-container spotify">
-          <FontAwesomeIcon
-            icon={faSpotify}
-            className="fa-spotify social-icons"
           />
         </div>
       </a>

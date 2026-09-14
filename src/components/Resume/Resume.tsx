@@ -56,7 +56,7 @@ function Resume() {
         </div>
       </span>
       <br />
-      <h4 className="project-section-title">Projects</h4>
+      <h4 className="blurred-section-title">Projects</h4>
       <div className="project-cards-container">
         {projectData.map((item) => (
           <span className="project-card-wrapper">

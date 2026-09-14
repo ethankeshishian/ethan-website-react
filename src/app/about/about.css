@@ -1,0 +1,33 @@
+/* Resume slide-up overlap — moved from About.css. Keeps the .articles-container.slide
+   + .resume-main-block { margin-top: -100px } (Resume.css) interaction unchanged. */
+.articles-container {
+  grid-area: articles;
+  width: 100%;
+  /* justify-self: center; */
+}
+
+/* Resume animation only on wide devices */
+.slide {
+  transform: translateY(132px);
+  /* accounting for margin-top */
+  animation: slide 0.8s cubic-bezier(0.07, 0.89, 0.79, 0.95);
+  animation-delay: 1.8s;
+  animation-fill-mode: forwards;
+
+  @media screen and (max-width: 1310px) {
+    transform: unset;
+    animation: unset;
+    animation-delay: unset;
+    animation-fill-mode: unset;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
